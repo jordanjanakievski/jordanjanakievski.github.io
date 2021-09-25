@@ -1,4 +1,1 @@
-permalink: /:home/
-permalink: /:quotes/
-permalink: /:library/
-permalink: /:projects/
+permalink: /:title/
