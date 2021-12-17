@@ -3,7 +3,7 @@ import React from "react";
 function SelfEdu() {
 	return (
 		<div className={"content"}>
-			<h2>~$ Autodidact</h2>
+			<h2>~$ Autodidacticism</h2>
 			<blockquote>
 				"Self-education is, I firmly believe, the only kind of education there
 				is."

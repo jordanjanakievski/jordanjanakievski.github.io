@@ -7,10 +7,16 @@ a:active {
 }
 
 .navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-left: 20%;
+	margin-right: 20%;
 	font-family: var(--main-font);
 	background-color: var(--dark-background);
 	text-align: center;
-	padding: 20px;
+	margin-bottom: 30px;
 }
 
 .desktop-header {
@@ -37,10 +43,6 @@ a:active {
 	transition: 0.3s;
 }
 
-.page-names:active {
-	color: var(--light-text);
-}
-
 #about:hover {
 	color: #e5c07b;
 }
@@ -57,13 +59,43 @@ a:active {
 	text-decoration: none;
 }
 
-.menu {
-	color: var(--light-text);
+#navbarDropdown {
+	font-size: 40px;
+	margin: 10px;
 	float: right;
-	margin: 15px;
+	display: none;
+}
+
+.nav-item.dropdown {
+	color: var(--light-text);
+}
+
+.nav-item.show.dropdown {
+	color: var(--dark-text);
+}
+
+.dropdown-menu {
+	display: none;
+}
+
+.dropdown-menu.show {
+	display: block;
+}
+
+.page-names-mobile {
+	font-size: 24px;
+	color: var(--dark-text);
+	padding: 10px;
+	text-decoration: none;
+	transition: 0.3s;
+	display: block;
 }
 
 @media screen and (max-width: 600px) {
+	.navbar {
+		margin: 0;
+	}
+
 	.desktop-header {
 		display: none;
 	}
@@ -80,16 +112,7 @@ a:active {
 		display: block;
 	}
 
-	.mobile.responsive {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-	}
-
-	.mobile.responsive a {
-		float: right;
-		display: block;
-		text-align: right;
+	#navbarDropdown {
+		display: inline-block;
 	}
 }

@@ -1,4 +1,5 @@
 .content {
+	margin-top: 140px;
 	font-family: var(--main-font);
 	font-size: 20px;
 	color: var(--light-text);
@@ -12,6 +13,7 @@
 
 @media screen and (max-width: 600px) {
 	.content {
+		margin-top: 80px;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
