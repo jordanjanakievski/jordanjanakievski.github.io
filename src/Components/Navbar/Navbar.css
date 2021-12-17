@@ -1,0 +1,95 @@
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+.navbar {
+	font-family: var(--main-font);
+	background-color: var(--dark-background);
+	text-align: center;
+	padding: 20px;
+}
+
+.desktop-header {
+	color: var(--light-text);
+	font-size: 50px;
+	margin: 10px;
+	text-decoration: none;
+}
+
+.mobile-header {
+	color: var(--light-text);
+	font-size: 40px;
+	margin: 10px;
+	text-decoration: none;
+	float: left;
+	display: none;
+}
+
+.page-names {
+	font-size: 24px;
+	color: var(--dark-text);
+	padding: 10px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.page-names:active {
+	color: var(--light-text);
+}
+
+#about:hover {
+	color: #e5c07b;
+}
+
+#projects:hover {
+	color: #61afef;
+}
+
+#self-education:hover {
+	color: #e06c75;
+}
+
+.page-names:visited {
+	text-decoration: none;
+}
+
+.menu {
+	color: var(--light-text);
+	float: right;
+	margin: 15px;
+}
+
+@media screen and (max-width: 600px) {
+	.desktop-header {
+		display: none;
+	}
+
+	.mobile-header {
+		display: inline-block;
+	}
+
+	#desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.mobile.responsive {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.mobile.responsive a {
+		float: right;
+		display: block;
+		text-align: right;
+	}
+}

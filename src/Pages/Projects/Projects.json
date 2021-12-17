@@ -1,0 +1,14 @@
+{
+	"Plankton Eye": {
+		"link": "https://github.com/jordanjanakievski/plankton_eye",
+		"version": "v0.11.0",
+		"image": "projects_images/plankton_eye_iphone.png",
+		"description": "Plankton Eye is an object detection application that identifies three shapes of diatoms. This was developed for Bellarmine Preparatory's Marine Chemistry program to help aid in plankton quantification. Presented at the 2021 International Science and Engineering Fair."
+	},
+	"CO2 Predictive Analysis": {
+		"link": "https://github.com/declim/CSC110-Project",
+		"version": "v1.0.0",
+		"image": "projects_images/co2.png",
+		"description": "CO2 Predictive Analysis is a program that predicts the CO2 emissions using linear and polynomial regressions and machine learning. This was developed as a project for the University of Toronto's CSC110 course."
+	}
+}
