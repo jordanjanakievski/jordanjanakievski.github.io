@@ -1,0 +1,32 @@
+.content {
+	margin-top: 140px;
+	margin-bottom: 30px;
+	font-family: var(--main-font);
+	font-size: 20px;
+	color: var(--light-text);
+	background-color: var(--dark-background);
+	margin-left: 20%;
+	margin-right: 20%;
+	min-height: calc(100vh - 110px);
+	max-width: 1400px;
+}
+
+.profile {
+	width: 400px;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+	.content {
+		margin-top: 100px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.profile {
+		width: 300px;
+		height: auto;
+	}
+}

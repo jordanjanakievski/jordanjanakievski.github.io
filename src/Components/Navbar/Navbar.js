@@ -10,8 +10,12 @@ const NavBar = () => {
 					<h1 className={"desktop-header"}>jordan janakievski</h1>
 				</Navbar.Brand>
 				<Nav>
-					<Nav.Link href="/" className={"page-names"} id={"about"}>
-						about
+					<Nav.Link
+						href="/experience"
+						className={"page-names"}
+						id={"experience"}
+					>
+						experience
 					</Nav.Link>
 					<Nav.Link href="/projects" className={"page-names"} id={"projects"}>
 						projects
@@ -35,11 +39,11 @@ const NavBar = () => {
 						<br />
 						<br />
 						<NavDropdown.Item
-							href="/"
+							href="/experience"
 							className={"page-names-mobile"}
-							id={"about"}
+							id={"experience"}
 						>
-							about
+							experience
 						</NavDropdown.Item>
 						<NavDropdown.Item
 							href="/projects"

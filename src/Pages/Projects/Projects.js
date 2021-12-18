@@ -7,7 +7,7 @@ import { IoGitBranch } from "react-icons/io5";
 function Projects() {
 	return (
 		<div className={"content"}>
-			<h2>~$ Recent Projects</h2>
+			<h2>{"> Recent Projects"}</h2>
 			<p>
 				Here are some of my recent projects, both personal and team. I have been
 				able to learn new skills from each one while also reinforcing previously

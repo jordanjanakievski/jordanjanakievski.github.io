@@ -8,7 +8,7 @@
 	"CO2 Predictive Analysis": {
 		"link": "https://github.com/declim/CSC110-Project",
 		"version": "v1.0.0",
-		"image": "projects_images/co2.png",
+		"image": "projects_images/uoft.png",
 		"description": "CO2 Predictive Analysis is a program that predicts the CO2 emissions using linear and polynomial regressions and machine learning. This was developed as a project for the University of Toronto's CSC110 course."
 	}
 }

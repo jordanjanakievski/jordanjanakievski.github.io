@@ -29,7 +29,7 @@ a:active {
 .mobile-header {
 	color: var(--light-text);
 	font-size: 40px;
-	margin: 10px;
+	margin: 20px;
 	text-decoration: none;
 	float: left;
 	display: none;
@@ -43,7 +43,7 @@ a:active {
 	transition: 0.3s;
 }
 
-#about:hover {
+#experience:hover {
 	color: #e5c07b;
 }
 
@@ -61,7 +61,7 @@ a:active {
 
 #navbarDropdown {
 	font-size: 40px;
-	margin: 10px;
+	margin: 20px;
 	float: right;
 	display: none;
 }
@@ -72,6 +72,7 @@ a:active {
 
 .nav-item.show.dropdown {
 	color: var(--dark-text);
+	transition: 1s;
 }
 
 .dropdown-menu {
