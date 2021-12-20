@@ -11,8 +11,6 @@ a:active {
 	top: 0;
 	left: 0;
 	right: 0;
-	margin-left: 20%;
-	margin-right: 20%;
 	font-family: var(--main-font);
 	background-color: var(--dark-background);
 	text-align: center;

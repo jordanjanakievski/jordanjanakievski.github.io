@@ -15,11 +15,12 @@ const Footer = () => {
 		<Container className={"footer"}>
 			<Container>
 				<Nav>
-					<Nav.Link href="mailto:jajanak10@gmail.com">
+					<Nav.Link href="mailto:jordan.a.janakievski@gmail.com">
 						<IoMail size={30} className={"logo"} />
 					</Nav.Link>
-
-					<IoReader size={30} className={"logo"} />
+					<a href="jordan_janakievski_resume.pdf" download>
+						<IoReader size={30} className={"logo"} />
+					</a>
 					<Nav.Link href="https://www.linkedin.com/in/jordan-janakievski">
 						<IoLogoLinkedin size={30} className={"logo"} />
 					</Nav.Link>

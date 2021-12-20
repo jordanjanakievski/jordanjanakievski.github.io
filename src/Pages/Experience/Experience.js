@@ -16,6 +16,11 @@ function About() {
 	return (
 		<div className={"content"}>
 			<h2>{"> Education"}</h2>
+			<p>
+				I am currently pursuing a Bachelor of Science in Computer Science at the
+				University of Toronto. My current interests include web development,
+				artificial intelligence, and ethical applications of software.
+			</p>
 			{Education(jsonEducation)}
 			<h2>{"> Work"}</h2>
 			{Experience(jsonExperience)}
@@ -87,7 +92,6 @@ function Experience(data) {
 			</div>
 		);
 	}
-	console.log(jobs);
 	let jobList = jobs.map(function (job) {
 		return job;
 	});
