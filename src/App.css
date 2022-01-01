@@ -1,0 +1,13 @@
+:root {
+	--dark-text: #818181;
+	--light-text: #d1d0c5;
+	--dark-background: #323437;
+	--light-background: whitesmoke;
+	--main-font: "Roboto Mono", monospace;
+}
+
+.App {
+	text-align: left;
+	background-color: var(--dark-background);
+	min-height: calc(100vh - 110px);
+}
