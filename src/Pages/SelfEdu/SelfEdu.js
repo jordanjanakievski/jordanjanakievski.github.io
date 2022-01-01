@@ -11,36 +11,54 @@ function SelfEdu() {
 				<br /> &mdash; Issac Asimov
 			</blockquote>
 			<p>
+				My formal education has introduced me to a wide array of topics and
+				ideas that I am forever grateful for. It has made me a well-rounded and
+				curious individual as these subjects have helped me grow in my
+				interpersonal and creative skills. Nonetheless, I have continued to
+				learn about new topics and ideas outside of the classroom and lecture
+				hall. It has been some of these pursuits that have helped me grow more
+				as a student and a member of society.
+			</p>
+			<p>
 				The ability to learn on my own has helped expose me to topics outside of
 				my formal education. It has opened my mind to some of the world's
 				greatest thinkers, broadened my perspectives, and helped me develop as a
 				person. These experiences aid in my continuous pursuit to grow as a
-				writer and in my communcation skills.
+				writer and in my communication skills.
 			</p>
 			<p>
 				Inspired when reading <i>The Personal MBA</i>, I decided to approach my
 				self-studies like a real course. By dedicating time, taking notes, and
 				applying what I learn, I can turn my interests into practical skills.
 			</p>
-			<h3>Leadership</h3>
-			{Reading(jsonSelfEdu["Leadership"])}
-			<h3>Business</h3>
-			{Reading(jsonSelfEdu["Business"])}
-			<h3>Self-Improvement</h3>
-			{Reading(jsonSelfEdu["Self-Improvement"])}
+			<u>
+				<h3>Leadership</h3>
+			</u>
+			{Books(jsonSelfEdu["Leadership"])}
+			<u>
+				<h3>Business</h3>
+			</u>
+			{Books(jsonSelfEdu["Business"])}
+			<u>
+				<h3>Self-Improvement</h3>
+			</u>
+			{Books(jsonSelfEdu["Self-Improvement"])}
 		</div>
 	);
 }
 
-function Reading(data) {
+function Books(data) {
 	let jobs = [];
 	for (let key in data) {
 		jobs.push(
 			<div>
 				<p>
-					<i>{key}</i> - {data[key].author} <br />
+					<b>
+						<i>{key}</i>
+					</b>{" "}
+					- {data[key].author} <br />
 				</p>
-				<p>{data[key].description}</p>
+				<p>&emsp; {data[key].thoughts}</p>
 			</div>
 		);
 	}

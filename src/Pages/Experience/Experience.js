@@ -19,7 +19,7 @@ function About() {
 			<p>
 				I am currently pursuing a Bachelor of Science in Computer Science at the
 				University of Toronto. My current interests include web development,
-				artificial intelligence, and ethical applications of software.
+				artificial intelligence, and the ethical applications of software.
 			</p>
 			{Education(jsonEducation)}
 			<h2>{"> Work"}</h2>

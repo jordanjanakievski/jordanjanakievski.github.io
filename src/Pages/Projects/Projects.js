@@ -30,7 +30,7 @@ function Project(data) {
 					<Card.Img
 						variant={"top"}
 						src={data[key].image}
-						id={"plankton-eye-image"}
+						id={"project-image"}
 					/>
 					<h2>{key}</h2>
 					<a href={data[key].link} className={"version"}>
