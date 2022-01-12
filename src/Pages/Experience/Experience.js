@@ -84,11 +84,12 @@ function Experience(data) {
 	for (let key in data) {
 		jobs.push(
 			<div>
-				<p id={"bold"}>
-					{key} - {data[key].position} <br />
+				<p>
+					<b>{key}</b> - {data[key].position} <br />
 					{data[key].time}
 				</p>
-				<p>{data[key].description}</p>
+				{/* Planning to reimplement in a different way */}
+				{/* <p>{data[key].description}</p> */}
 			</div>
 		);
 	}

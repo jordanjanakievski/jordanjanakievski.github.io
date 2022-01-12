@@ -20,11 +20,6 @@
 	text-align: right;
 }
 
-#bold {
-	font-weight: 600;
-	margin: 0;
-}
-
 @media screen and (max-width: 600px) {
 	.content {
 		margin-top: 100px;
