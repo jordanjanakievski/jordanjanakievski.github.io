@@ -5,10 +5,9 @@
 	font-size: 20px;
 	color: var(--light-text);
 	background-color: var(--dark-background);
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 30%;
+	margin-right: 30%;
 	min-height: calc(100vh - 110px);
-	max-width: 1400px;
 }
 
 .profile {
@@ -22,7 +21,7 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 	.content {
 		margin-top: 100px;
 		margin-left: 5%;

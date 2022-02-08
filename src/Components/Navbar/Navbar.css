@@ -90,7 +90,7 @@ a:active {
 	display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 	.navbar {
 		margin: 0;
 	}
