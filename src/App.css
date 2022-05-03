@@ -1,9 +1,11 @@
 :root {
-	--dark-text: #818181;
-	--light-text: #d1d0c5;
-	--dark-background: #323437;
+	--dark-text: #909CA7;
+	--light-text: #FFFFFF;
+	--accent-color: #7E5F69;
+	--dark-background: #283A4E;
 	--light-background: whitesmoke;
-	--main-font: "Roboto Mono", monospace;
+	--main-font: "Nunito Sans", sans-serif;
+	--accent-font: "Bodoni Moda", serif;
 }
 
 .App {

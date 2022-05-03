@@ -6,60 +6,41 @@ const NavBar = () => {
 	return (
 		<Navbar>
 			<Container id={"desktop"}>
-				<Navbar.Brand href="/">
-					<h1 className={"desktop-header"}>jordan janakievski</h1>
-				</Navbar.Brand>
 				<Nav>
-					<Nav.Link
-						href="/experience"
-						className={"page-names"}
-						id={"experience"}
-					>
-						experience
+					<Nav.Link href="/" className={"page-title"}>
+						Jordan Janakievski
 					</Nav.Link>
-					<Nav.Link href="/projects" className={"page-names"} id={"projects"}>
-						projects
-					</Nav.Link>
-					<Nav.Link
-						href="/self-education"
-						className={"page-names"}
-						id={"self-education"}
-					>
-						self-education
-					</Nav.Link>
+					<div className={"right-items"}>
+						<Nav.Link href="/experience" className={"page-names"}>
+							About
+						</Nav.Link>
+						<Nav.Link href="/projects" className={"page-names"}>
+							Projects
+						</Nav.Link>
+						<Nav.Link href="/self-education" className={"page-names"}>
+							Contact
+						</Nav.Link>
+					</div>
 				</Nav>
 			</Container>
 			<Container className={"mobile"} id={"mobile-nav"}>
-				<Navbar.Brand href="/">
-					<h1 className={"mobile-header"}>jj</h1>
-				</Navbar.Brand>
 				<Nav>
-					<NavDropdown title="☰" id="navbarDropdown">
-						<br />
-						<br />
-						<br />
-						<NavDropdown.Item
-							href="/experience"
-							className={"page-names-mobile"}
-							id={"experience"}
-						>
-							experience
-						</NavDropdown.Item>
-						<NavDropdown.Item
-							href="/projects"
-							className={"page-names-mobile"}
-							id={"projects"}
-						>
-							projects
-						</NavDropdown.Item>
-						<NavDropdown.Item
-							href="/self-education"
-							className={"page-names-mobile"}
-							id={"self-education"}
-						>
-							self-education
-						</NavDropdown.Item>
-					</NavDropdown>
+					<div>
+						<Nav.Link href="/" className={"mobile-title"}>
+							Jordan Janakievski
+						</Nav.Link>
+					</div>
+					<div>
+						<Nav.Link href="/experience" className={"mobile-names"}>
+							About
+						</Nav.Link>
+						<Nav.Link href="/projects" className={"mobile-names"}>
+							Projects
+						</Nav.Link>
+						<Nav.Link href="/self-education" className={"mobile-names"}>
+							Contact
+						</Nav.Link>
+					</div>
 				</Nav>
 			</Container>
 		</Navbar>

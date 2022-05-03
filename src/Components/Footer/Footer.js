@@ -2,10 +2,10 @@ import React from "react";
 import { Nav, Container } from "react-bootstrap";
 import "./Footer.css";
 import {
-	IoMail,
 	IoReader,
 	IoLogoLinkedin,
 	IoLogoGithub,
+	IoLogoGitlab,
 	IoLogoReact,
 	IoGitBranch,
 } from "react-icons/io5";
@@ -15,9 +15,6 @@ const Footer = () => {
 		<Container className={"footer"}>
 			<Container>
 				<Nav>
-					<Nav.Link href="mailto:jordan.a.janakievski@gmail.com">
-						<IoMail size={30} className={"logo"} />
-					</Nav.Link>
 					<a href="jordan_janakievski_resume.pdf" download>
 						<IoReader size={30} className={"logo"} />
 					</a>
@@ -27,10 +24,12 @@ const Footer = () => {
 					<Nav.Link href="https://github.com/jordanjanakievski">
 						<IoLogoGithub size={30} className={"logo"} />
 					</Nav.Link>
+					<Nav.Link href="https://gitlab.com/jordanjanakievski">
+						<IoLogoGitlab size={30} className={"logo"} />
+					</Nav.Link>
 				</Nav>
 			</Container>
 			<p>
-				Built with <IoLogoReact size={20} color="#646669" />{" "}
 				<Nav.Link
 					href="https://github.com/jordanjanakievski/jordanjanakievski.github.io"
 					className="version"
