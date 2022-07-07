@@ -1,35 +1,87 @@
-.content {
+/* Universal Tags */ 
+h1 {
+	font-size: 8vw;
+	font-weight: 300;
+	margin: 0;
+}
+
+h2 {
+	font-size: 60px;
+	font-weight: 300;
+	margin: 0;
+}
+
+h3 {
+	font-size: 4vw;
+	font-family: var(--accent-font);
+	margin: 0;
+}
+
+h4 {
+	font-size: 2vw;
+	font-weight: 300;
+	margin-top: 150px;
+}
+
+.main-container {
+	text-align: left;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+/* Hero Section */
+
+.hero {
 	margin-top: 140px;
 	margin-bottom: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
 	font-family: var(--main-font);
 	font-size: 20px;
 	color: var(--light-text);
+}
+
+/* About Section */
+
+.about {
+	margin-bottom: 30px;
+	font-size: 20px;
+	color: var(--light-text);
 	background-color: var(--dark-background);
-	margin-left: 30%;
-	margin-right: 30%;
-	min-height: calc(100vh - 110px);
 }
 
-.profile {
-	width: 450px;
-	height: auto;
-	display: block;
-	margin: auto;
+.about h2 {
+	color: #62D1DE;
 }
 
-#center {
-	text-align: center;
+.about p {
+	margin-left: 100px;
 }
 
-@media screen and (max-width: 750px) {
+/* Projects Section */
+
+
+/* Contact Section */
+
+
+@media screen and (max-width: 860px) {
 	.content {
-		margin-top: 100px;
+		margin-top: 150px;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
 
-	.profile {
-		width: 300px;
-		height: auto;
+	.hero h1 {
+		font-size: 60px;
 	}
+
+	.hero h3 {
+		font-size: 30px;
+	}
+
+	.hero h4 {
+		font-size: 20px;
+	}
+
+
 }

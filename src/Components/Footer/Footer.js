@@ -35,7 +35,7 @@ const Footer = () => {
 					className="version"
 				>
 					<IoGitBranch size={20} />
-					v2.1.0
+					v3.0.0
 				</Nav.Link>
 			</p>
 		</Container>

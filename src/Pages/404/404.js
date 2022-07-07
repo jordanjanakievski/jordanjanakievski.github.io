@@ -3,10 +3,12 @@ import "./404.css";
 
 function Page404() {
 	return (
-		<div className={"content"}>
-			<br />
-			<h2 id={"center"}>Whoops, 404 Error!</h2>
-			<h2 id={"center"}>It looks like that pages does not exist</h2>
+		<div className="error-container">
+			<div className={"hero"}>
+				<br />
+				<h2 id={"center"}>Whoops!</h2>
+				<h2 id={"center"}>It looks like this page does not exist</h2>
+			</div>
 		</div>
 	);
 }

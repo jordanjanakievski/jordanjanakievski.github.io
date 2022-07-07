@@ -2,7 +2,7 @@
 	--dark-text: #909CA7;
 	--light-text: #FFFFFF;
 	--accent-color: #7E5F69;
-	--dark-background: #283A4E;
+	/* --dark-background: #283A4E; */
 	--light-background: whitesmoke;
 	--main-font: "Nunito Sans", sans-serif;
 	--accent-font: "Bodoni Moda", serif;
@@ -10,6 +10,12 @@
 
 .App {
 	text-align: left;
-	background-color: var(--dark-background);
 	min-height: calc(100vh - 110px);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(56, 56, 56, 0.5)), url(https://images.unsplash.com/photo-1646797672640-8c7c3841062c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
 }
