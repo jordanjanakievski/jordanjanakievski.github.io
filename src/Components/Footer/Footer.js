@@ -1,13 +1,7 @@
 import React from "react";
 import { Nav, Container } from "react-bootstrap";
 import "./Footer.css";
-import {
-	IoLogoGitlab,
-	IoLogoLinkedin,
-	IoLogoGithub,
-	IoLogoReact,
-	IoGitBranch,
-} from "react-icons/io5";
+import { SiGitlab, SiLinkedin, SiGithub } from "react-icons/si";
 
 const Footer = () => {
 	return (
@@ -15,13 +9,13 @@ const Footer = () => {
 			<Container>
 				<Nav>
 					<Nav.Link href="https://gitlab.com/jordanjanakievski">
-						<IoLogoGitlab size={30} className={"logo"} />
+						<SiGitlab size={30} className={"logo"} />
 					</Nav.Link>
 					<Nav.Link href="https://www.linkedin.com/in/jordan-janakievski">
-						<IoLogoLinkedin size={30} className={"logo"} />
+						<SiLinkedin size={30} className={"logo"} />
 					</Nav.Link>
 					<Nav.Link href="https://github.com/jordanjanakievski">
-						<IoLogoGithub size={30} className={"logo"} />
+						<SiGithub size={30} className={"logo"} />
 					</Nav.Link>
 				</Nav>
 			</Container>

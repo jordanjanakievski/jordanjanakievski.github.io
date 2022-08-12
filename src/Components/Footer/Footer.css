@@ -52,7 +52,7 @@
 	color: var(--light-text);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
 	.footer {
 		margin-left: 5%;
 		margin-right: 5%;

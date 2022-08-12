@@ -11,96 +11,93 @@ a:active {
 	top: 0;
 	left: 0;
 	right: 0;
+	padding-top: 25px;
+	margin-left: 20%;
+	margin-right: 20%;
 	font-family: var(--main-font);
-	background-color: var(--dark-background);
-	text-align: center;
 	margin-bottom: 30px;
-}
-
-.desktop-header {
-	color: var(--light-text);
-	font-size: 50px;
-	margin: 10px;
-	text-decoration: none;
-}
-
-.mobile-header {
-	color: var(--light-text);
-	font-size: 40px;
-	margin: 20px;
-	text-decoration: none;
 	float: left;
-	display: none;
+	max-width: 1400px;
+}
+
+.navbar-nav {
+	padding-bottom: 10px;
+}
+
+.navbar:after {
+	position: flex;
+	left: 0;
+	height: 2px;
+	background: var(--light-text);
+	content: "";
+	width: 100%;
+	display: block;
+}
+
+.page-title {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 600;
+	font-family: var(--heading-font);
+	color: var(--light-text);
+	padding: 10px;
+	text-decoration: none;
+	transition: 0.3s;
 }
 
 .page-names {
-	font-size: 24px;
-	color: var(--dark-text);
-	padding: 10px;
-	text-decoration: none;
-	transition: 0.3s;
-}
-
-#experience:hover {
-	color: #e5c07b;
-}
-
-#projects:hover {
-	color: #61afef;
-}
-
-#self-education:hover {
-	color: #e06c75;
-}
-
-.page-names:visited {
-	text-decoration: none;
-}
-
-#navbarDropdown {
-	font-size: 40px;
-	margin: 20px;
-	float: right;
-	display: none;
-}
-
-.nav-item.dropdown {
+	display: inline-block;
+	font-size: 25px;
 	color: var(--light-text);
-}
-
-.nav-item.show.dropdown {
-	color: var(--dark-text);
-	transition: 1s;
-}
-
-.dropdown-menu {
-	display: none;
-}
-
-.dropdown-menu.show {
-	display: block;
-}
-
-.page-names-mobile {
-	font-size: 24px;
-	color: var(--dark-text);
 	padding: 10px;
 	text-decoration: none;
 	transition: 0.3s;
-	display: block;
 }
 
-@media screen and (max-width: 750px) {
+.right-items {
+	float: right;
+}
+
+.page-title:hover {
+	color: #acacac;
+}
+
+.page-names:hover {
+	color: #acacac;
+}
+
+/* Mobile Specific*/
+
+.mobile {
+	text-align: center;
+	display: none;
+}
+
+.mobile-title {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 600;
+	font-family: var(--heading-font);
+	color: var(--light-text);
+	padding: 10px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.mobile-names {
+	display: inline-block;
+	font-size: 25px;
+	color: var(--light-text);
+	padding: 10px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1000px) {
 	.navbar {
 		margin: 0;
-	}
-
-	.desktop-header {
-		display: none;
-	}
-
-	.mobile-header {
-		display: inline-block;
 	}
 
 	#desktop {
@@ -111,7 +108,7 @@ a:active {
 		display: block;
 	}
 
-	#navbarDropdown {
-		display: inline-block;
+	.navbar:after {
+		display: none;
 	}
 }
