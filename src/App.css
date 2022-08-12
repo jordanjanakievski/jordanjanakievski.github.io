@@ -1,9 +1,12 @@
 :root {
-	--dark-text: #818181;
-	--light-text: #d1d0c5;
-	--dark-background: #323437;
+	--dark-text: #000000;
+	--light-text: #FFFFFF;
+	--accent-text: #D42C2C;
+	--dark-background: #252525;
 	--light-background: whitesmoke;
-	--main-font: "Roboto Mono", monospace;
+	--main-font: "Helvetica Neue", sans-serif;
+	--accent-font: "Bodoni Moda", serif;
+	--heading-font: "Futura", sans-serif;
 }
 
 .App {
