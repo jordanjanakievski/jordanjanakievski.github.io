@@ -1,23 +1,19 @@
 .footer {
-	background-color: var(--dark-background);
 	bottom: 0;
 	left: 0;
 	right: 0;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	margin-left: 20%;
 	margin-right: 20%;
-	text-decoration: none;
-	font-family: var(--main-font);
-	font-size: 20px;
-	color: var(--dark-text);
 	text-align: center;
+	max-width: 1400px;
 }
 
 .footer:before {
 	position: flex;
 	left: 0;
-	height: 1px;
-	background: var(--dark-text);
+	height: 2px;
+	background: var(--light-text);
 	content: "";
 	width: 100%;
 	display: block;
@@ -25,7 +21,7 @@
 
 .logo {
 	padding-top: 20px;
-	color: var(--dark-text);
+	color: var(--light-text);
 	margin-left: 20px;
 	margin-right: 20px;
 	transition: 0.3s;
@@ -33,23 +29,23 @@
 
 .logo:visited {
 	text-decoration: none;
-	color: var(--dark-text);
+	color: var(--light-text);
 }
 
 .logo:hover {
-	color: var(--light-text);
+	color: #acacac;
 }
 
 .version {
 	font-size: 17px;
 	text-decoration: none;
-	color: var(--dark-text);
+	color: var(--light-text);
 	transition: 0.3s;
 }
 
 .version:visited {
 	text-decoration: none;
-	color: var(--dark-text);
+	color: var(--light-text);
 }
 
 .version:hover {
