@@ -1,0 +1,17 @@
+{
+	"Plankton Eye": {
+		"link": "https://github.com/jordanjanakievski/plankton_eye",
+		"icons": ["Python", "Tensorflow", "Flutter"],
+		"description": "Plankton Eye is an object detection application that identifies three shapes of diatoms. This was developed for Bellarmine Preparatory's Marine Chemistry program to help aid in plankton quantification. Presented at the 2021 International Science and Engineering Fair."
+	},
+	"UofT Blueprint Website": {
+		"link": "https://github.com/uoftblueprint/uoftblueprint.github.io",
+		"icons": ["JavaScript", "React", "HTML", "CSS"],
+		"description": "I joined UofT Blueprint's Internal Team a few months after development for the website was complete. We were tasked with redesigning and reconstructing the website to improve functionality."
+	},
+	"Portfolio Website": {
+		"link": "https://github.com/jordanjanakievski/jordanjanakievski.github.io",
+		"icons": ["JavaScript", "React", "HTML", "CSS"],
+		"description": "My portfolio website. This is the website you are currently on. Built to practice and develop skills in web development."
+	}
+}
