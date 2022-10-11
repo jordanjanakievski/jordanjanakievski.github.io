@@ -53,6 +53,7 @@ h6 {
 	margin-left: 20%;
 	margin-right: 20%;
 	min-height: calc(100vh - 110px);
+	max-width: 1400px;
 }
 
 .hero-flex {
@@ -79,6 +80,7 @@ h6 {
 	background-color: var(--light-background);
 	padding-left: 20%;
 	padding-right: 20%;
+	max-width: 1400px;
 }
 
 /* Projects Section */
@@ -91,6 +93,7 @@ h6 {
 	background-color: #344b73;
 	padding-left: 20%;
 	padding-right: 20%;
+	max-width: 1400px;
 }
 
 .card-container {
@@ -140,6 +143,7 @@ h6 {
 	padding-right: 20%;
 	text-align: center;
 	min-height: 40vh;
+	max-width: 1400px;
 }
 
 .contact-button {
