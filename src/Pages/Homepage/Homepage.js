@@ -20,7 +20,7 @@ function Homepage() {
 	return (
 		<div>
 			<div>{Hero()}</div>
-			<div id="about">{About()}</div>
+			{About()}
 			<div id="projects">{Projects()}</div>
 			<div id="contact">{Contact()}</div>
 		</div>
@@ -52,7 +52,7 @@ function Hero() {
 // About Section of the page
 function About() {
 	return (
-		<Container className="about-container">
+		<Container className="about-container" id="about">
 			<h2>About</h2>
 			<p>My name is Jordan Janakievski</p>
 			<p>

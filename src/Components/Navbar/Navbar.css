@@ -17,7 +17,6 @@ a:active {
 	margin-right: 20%;
 	font-family: var(--main-font);
 	float: left;
-	max-width: 1400px;
 }
 
 .navbar-nav {
