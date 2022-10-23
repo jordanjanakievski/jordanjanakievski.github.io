@@ -13,5 +13,10 @@
 		"link": "https://github.com/jordanjanakievski/jordanjanakievski.github.io",
 		"icons": ["JavaScript", "React", "HTML", "CSS"],
 		"description": "My portfolio website. This is the website you are currently on. Built to practice and develop skills in web development."
+	},
+	"Toronto Community Employment Services (TCES)": {
+		"link": "https://github.com/uoftblueprint/tces",
+		"icons": ["MongoDB", "Express", "React", "Node", "TypeScript"],
+		"description": "CRM developed for TCES as part of UofT Blueprint's 2022-2023 cohort. I worked fullstack on this project."
 	}
 }

@@ -4,13 +4,17 @@ import { IoMail } from "react-icons/io5";
 import { GiScubaTanks } from "react-icons/gi";
 import {
 	SiCss3,
+	SiExpress,
 	SiFlutter,
 	SiHtml5,
 	SiJavascript,
+	SiMongodb,
+	SiNodedotjs,
 	SiNotion,
 	SiPython,
 	SiReact,
 	SiTensorflow,
+	SiTypescript,
 } from "react-icons/si";
 import projectsDB from "./projectsDatabase.json";
 import certificationsDB from "./certificationsDatabase.json";
@@ -54,7 +58,7 @@ function About() {
 	return (
 		<Container className="about-container" id="about">
 			<h2>About</h2>
-			<p>My name is Jordan Janakievski</p>
+			<p>My name is Jordan Janakievski.</p>
 			<p>
 				I use my passion for technology to create unique solutions to challenges
 				we face. I try to open my mind to some of the world's greatest thinkers
@@ -132,8 +136,12 @@ function IconsToUse(data) {
 			icons.push(<SiPython size={25} className="icon" />);
 		} else if (data.icons[icon] === "Tensorflow") {
 			icons.push(<SiTensorflow size={25} className="icon" />);
+		} else if (data.icons[icon] === "TypeScript") {
+			icons.push(<SiTypescript size={25} className="icon" />);
 		} else if (data.icons[icon] === "Flutter") {
 			icons.push(<SiFlutter size={25} className="icon" />);
+		} else if (data.icons[icon] === "Express") {
+			icons.push(<SiExpress size={25} className="icon" />);
 		} else if (data.icons[icon] === "HTML") {
 			icons.push(<SiHtml5 size={25} className="icon" />);
 		} else if (data.icons[icon] === "CSS") {
@@ -142,8 +150,12 @@ function IconsToUse(data) {
 			icons.push(<SiJavascript size={25} className="icon" />);
 		} else if (data.icons[icon] === "React") {
 			icons.push(<SiReact size={25} className="icon" />);
+		} else if (data.icons[icon] === "MongoDB") {
+			icons.push(<SiMongodb size={25} className="icon" />);
 		} else if (data.icons[icon] === "Notion") {
 			icons.push(<SiNotion size={25} className="icon" />);
+		} else if (data.icons[icon] === "Node") {
+			icons.push(<SiNodedotjs size={25} className="icon" />);
 		} else if (data.icons[icon] === "Scuba Tanks") {
 			icons.push(<GiScubaTanks size={25} className="icon" />);
 		}
