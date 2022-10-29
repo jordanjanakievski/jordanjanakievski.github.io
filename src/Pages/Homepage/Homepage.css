@@ -52,7 +52,7 @@ h6 {
 	background-color: var(--dark-background);
 	margin-left: 20%;
 	margin-right: 20%;
-	min-height: calc(100vh - 110px);
+	min-height: calc(50vh);
 }
 
 .hero-flex {
