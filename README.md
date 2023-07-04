@@ -1,21 +1,44 @@
-# This is Jordan Janakievski's portfolio website
+# Jordan Janakievski Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Running this project
 
-In the project directory, you can run:
+This is a Svelte project
 
-### `npm start`
+```bash
+# clone the project
+git clone https://github.com/jordanjanakievski/jordanjanakievski.github.io.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# run npm install in the root directory
+npm install
+```
 
-### `npm test`
+## Developing
 
-Launches the test runner in the interactive watch mode.
+Once the node modules have been installed, you can run the project
 
-### `npm run build`
+```bash
+# to run the development version of the project
+npm run dev
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# to build the production version of the project
+npm run build
+
+# to check the production version of the project (only after it has been built)
+npm run preview
+```
+
+## Deployment
+
+Once you have a build that you like, you can deploy the project to Github Pages
+
+```bash
+# to deploy the project
+npm run deploy
+```
+
+I hope this structure is helpful.
+
+I can be reached at <jordan.a.janakievski@gmail.com> or the other links available on this codebase's website.
+
+Thank you!
