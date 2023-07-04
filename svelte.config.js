@@ -14,7 +14,7 @@ const config = {
             }
         ),
         paths: {
-            base: "/jordanjanakievski.github.io",
+            base: dev ? '' : process.env.BASE_PATH,
         }
     }
 };
