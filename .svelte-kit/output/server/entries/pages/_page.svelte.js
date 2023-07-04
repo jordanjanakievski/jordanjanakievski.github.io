@@ -72,7 +72,7 @@ const Contact_icon = create_ssr_component(($$result, $$props, $$bindings, slots)
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "body{margin:0;padding:0;font-family:'Futura', sans-serif;background-color:#e0f1ff}h1.svelte-p0s0yj{color:#fb2f2f;font-family:'Futura', sans-serif;font-size:82px;position:absolute;text-align:center}h2.svelte-p0s0yj{color:#fb2f2f;font-family:'Futura', sans-serif;font-size:60px;text-align:center}h3.svelte-p0s0yj{color:#fb2f2f;font-family:'Futura', sans-serif;font-size:48px;text-align:center}h4.svelte-p0s0yj{color:#fb2f2f;font-family:'Futura', sans-serif;font-size:32px;text-align:center}p.svelte-p0s0yj{color:#1c2c44;font-family:'Helvetica', sans-serif;font-size:24px;text-align:left}.hero.svelte-p0s0yj{min-height:100vh;width:auto;position:relative;display:flex;justify-content:center;align-items:center}.about.svelte-p0s0yj{min-height:100vh;max-width:1440px;position:relative;justify-content:center;margin-left:20%;margin-right:20%;display:flex;align-items:center;flex-wrap:wrap}.about-content.svelte-p0s0yj{display:flex;justify-content:center;flex-direction:row;max-width:900px}.about-images.svelte-p0s0yj{display:flex;justify-content:center;flex-direction:column}.memoji.svelte-p0s0yj{width:400px;height:400px}.about-cards.svelte-p0s0yj{display:flex;justify-content:center;flex-direction:column;align-items:center}.about-data.svelte-p0s0yj{display:flex;justify-content:space-around;flex-direction:row}.projects.svelte-p0s0yj{min-height:100vh;max-width:1440px;position:relative;justify-content:center;margin-left:20%;margin-right:20%;display:flex;align-items:center;flex-wrap:wrap;flex-direction:column}.project-cards.svelte-p0s0yj{display:flex;justify-content:space-around;flex-direction:column}.contact.svelte-p0s0yj{min-height:80vh;max-width:900px;width:auto;position:relative;justify-content:center;align-items:center;margin-left:20%;margin-right:20%}.contact-contents.svelte-p0s0yj{display:flex;justify-content:space-around;flex-direction:column;height:400px}.contact-links.svelte-p0s0yj{display:flex;justify-content:space-evenly;flex-direction:row;bottom:0}@media only screen and (max-width: 1160px){.about-content.svelte-p0s0yj{flex-direction:column}.about-images.svelte-p0s0yj{flex-direction:row}.memoji.svelte-p0s0yj{width:300px;height:300px}}@media only screen and (max-width: 840px){.about-data.svelte-p0s0yj{flex-direction:column}}@media only screen and (max-width: 700px){h1.svelte-p0s0yj{font-size:54px}h2.svelte-p0s0yj{font-size:38px}h3.svelte-p0s0yj{font-size:30px}p.svelte-p0s0yj{font-size:18px}.about.svelte-p0s0yj{margin-left:10%;margin-right:10%}.memoji.svelte-p0s0yj{width:160px;height:160px}.projects.svelte-p0s0yj{flex-direction:row}}",
+  code: "body{margin:0;padding:0;font-family:'Futura', sans-serif;background-color:#e0f1ff}h1.svelte-z40rbz{color:#fb2f2f;font-family:'Futura', sans-serif;font-size:82px;position:absolute;text-align:center}h2.svelte-z40rbz{color:#fb2f2f;font-family:'Futura', sans-serif;font-size:60px;text-align:center}h3.svelte-z40rbz{color:#fb2f2f;font-family:'Futura', sans-serif;font-size:48px;text-align:center}h4.svelte-z40rbz{color:#fb2f2f;font-family:'Futura', sans-serif;font-size:32px;text-align:center}p.svelte-z40rbz{color:#1c2c44;font-family:'Helvetica', sans-serif;font-size:24px;text-align:left}.hero.svelte-z40rbz{min-height:100vh;max-width:1440px;margin-left:20%;margin-right:20%;position:relative;display:flex;justify-content:center;align-items:center;flex-direction:column}.about.svelte-z40rbz{min-height:100vh;max-width:1440px;position:relative;justify-content:center;margin-left:20%;margin-right:20%;display:flex;align-items:center;flex-wrap:wrap;flex-direction:column}.about-content.svelte-z40rbz{display:flex;justify-content:center;flex-direction:row;max-width:900px}.about-images.svelte-z40rbz{display:flex;justify-content:center;flex-direction:column}.memoji.svelte-z40rbz{width:400px;height:400px}.about-cards.svelte-z40rbz{display:flex;justify-content:center;flex-direction:column;align-items:center}.about-data.svelte-z40rbz{display:flex;justify-content:space-around;flex-direction:row}.projects.svelte-z40rbz{min-height:100vh;max-width:1440px;position:relative;justify-content:center;margin-left:20%;margin-right:20%;display:flex;align-items:center;flex-wrap:wrap;flex-direction:column}.project-cards.svelte-z40rbz{display:flex;justify-content:space-around;flex-direction:column}.contact.svelte-z40rbz{min-height:80vh;max-width:1440px;width:auto;position:relative;display:flex;justify-content:center;align-items:center;flex-direction:column;margin-left:20%;margin-right:20%}.contact-contents.svelte-z40rbz{display:flex;justify-content:space-around;flex-direction:column;height:400px}.contact-links.svelte-z40rbz{display:flex;justify-content:space-evenly;flex-direction:row}@media only screen and (max-width: 1160px){.about-content.svelte-z40rbz{flex-direction:column}.about-images.svelte-z40rbz{flex-direction:row}.memoji.svelte-z40rbz{width:300px;height:300px}}@media only screen and (max-width: 840px){.about-data.svelte-z40rbz{flex-direction:column}}@media only screen and (max-width: 700px){h1.svelte-z40rbz{font-size:54px}h2.svelte-z40rbz{font-size:38px}h3.svelte-z40rbz{font-size:30px}p.svelte-z40rbz{font-size:18px}.about.svelte-z40rbz{margin-left:10%;margin-right:10%}.memoji.svelte-z40rbz{width:160px;height:160px}.projects.svelte-z40rbz{flex-direction:row}}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -81,20 +81,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `
 
-<div class="hero svelte-p0s0yj"><h1 class="svelte-p0s0yj"${add_styles({
+<div class="hero svelte-z40rbz"><h1 class="svelte-z40rbz"${add_styles({
     "transform": `translate3d(0, ${scroll * -2}px, 0`
   })}>Jordan<br>Janakievski
 	</h1>
 	${validate_component(Down_arrow, "DownArrow").$$render($$result, {}, {}, {})}</div>
-<div class="about svelte-p0s0yj"><h2 class="svelte-p0s0yj">About Me</h2>
-	<div class="about-content svelte-p0s0yj"><div class="about-images svelte-p0s0yj"><img class="memoji svelte-p0s0yj" src="images/memoji-hand-raise.png" alt="Memoji">
-			<img class="memoji svelte-p0s0yj" src="images/memoji-laptop.png" alt="Memoji"></div>
-		<p class="svelte-p0s0yj">Hi, my name is Jordan!
+<div class="about svelte-z40rbz"><h2 class="svelte-z40rbz">About Me</h2>
+	<div class="about-content svelte-z40rbz"><div class="about-images svelte-z40rbz"><img class="memoji svelte-z40rbz" src="images/memoji-hand-raise.png" alt="Memoji">
+			<img class="memoji svelte-z40rbz" src="images/memoji-laptop.png" alt="Memoji"></div>
+		<p class="svelte-z40rbz">Hi, my name is Jordan!
 			<br><br>
 			I am an undergrad studying computer science at the University of Toronto. Having grown up in Seattle,
 			I think of myself as someone of two countries, two cities, and two towers.
 			<br><br>
-			My passion is to continue making a difference by developing software to help and improve people&#39;s
+			My passion is to continue making a difference by developing software to improve people&#39;s
 			lives. Whether it be direct impact through a software solution or contributing to a company that
 			serves to better its community, I believe software can empower change and lead people and organizations
 			to achieve the best possible outcomes.
@@ -107,8 +107,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 			mechanisms of a watch and how they work together. I find the symbiotic relationship between the
 			watch and its wearer to be so interesting.
 		</p></div>
-	<div class="about-cards svelte-p0s0yj"><h3 class="svelte-p0s0yj">By the Numbers</h3>
-		<div class="about-data svelte-p0s0yj">${validate_component(Data_card, "DataCard").$$render(
+	<div class="about-cards svelte-z40rbz"><h3 class="svelte-z40rbz">By the Numbers</h3>
+		<div class="about-data svelte-z40rbz">${validate_component(Data_card, "DataCard").$$render(
     $$result,
     {
       title: "Chess.com Rating",
@@ -148,8 +148,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {},
     {}
   )}</div></div></div>
-<div class="projects svelte-p0s0yj"><h2 class="svelte-p0s0yj">Projects</h2>
-	<div class="project-cards svelte-p0s0yj">${validate_component(Project_card, "ProjectCard").$$render(
+<div class="projects svelte-z40rbz"><h2 class="svelte-z40rbz">Projects</h2>
+	<div class="project-cards svelte-z40rbz">${validate_component(Project_card, "ProjectCard").$$render(
     $$result,
     {
       title: "Plankton Eye Mobile App",
@@ -191,9 +191,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   )}</div></div>
 <br><br>
 <br><br>
-<div class="contact svelte-p0s0yj"><h2 class="svelte-p0s0yj">Thank you for visiting</h2>
-	<h4 class="svelte-p0s0yj">You can also find me at any of these places...</h4>
-	<div class="contact-contents svelte-p0s0yj"><div class="contact-links svelte-p0s0yj">${validate_component(Contact_icon, "ContactIcon").$$render(
+<div class="contact svelte-z40rbz"><h2 class="svelte-z40rbz">Thank you for visiting</h2>
+	<h4 class="svelte-z40rbz">You can also find me at any of these places...</h4>
+	<div class="contact-contents svelte-z40rbz"><div class="contact-links svelte-z40rbz">${validate_component(Contact_icon, "ContactIcon").$$render(
     $$result,
     {
       icon: "e-mail",

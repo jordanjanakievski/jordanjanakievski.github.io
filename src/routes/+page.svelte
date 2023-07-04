@@ -47,7 +47,7 @@
 			I am an undergrad studying computer science at the University of Toronto. Having grown up in Seattle,
 			I think of myself as someone of two countries, two cities, and two towers.
 			<br /><br />
-			My passion is to continue making a difference by developing software to help and improve people's
+			My passion is to continue making a difference by developing software to improve people's
 			lives. Whether it be direct impact through a software solution or contributing to a company that
 			serves to better its community, I believe software can empower change and lead people and organizations
 			to achieve the best possible outcomes.
@@ -161,11 +161,14 @@
 
 	.hero {
 		min-height: 100vh;
-		width: auto;
+		max-width: 1440px;
+		margin-left: 20%;
+		margin-right: 20%;
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 	}
 
 	.about {
@@ -178,6 +181,7 @@
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
+		flex-direction: column;
 	}
 
 	.about-content {
@@ -232,11 +236,13 @@
 
 	.contact {
 		min-height: 80vh;
-		max-width: 900px;
+		max-width: 1440px;
 		width: auto;
 		position: relative;
+		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 		margin-left: 20%;
 		margin-right: 20%;
 	}
@@ -252,7 +258,6 @@
 		display: flex;
 		justify-content: space-evenly;
 		flex-direction: row;
-		bottom: 0;
 	}
 
 	@media only screen and (max-width: 1160px) {
