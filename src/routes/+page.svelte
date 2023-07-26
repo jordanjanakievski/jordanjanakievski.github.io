@@ -94,7 +94,7 @@
 			url="https://github.com/uoftblueprint/uoftblueprint.github.io"
 		/>
 		<ProjectCard
-			title="Toronto Community Employment Servcies (TCES) CRM"
+			title="Toronto Community Employment Services (TCES) CRM"
 			icon="clipboard"
 			url="https://github.com/uoftblueprint/tces"
 		/>
