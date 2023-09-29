@@ -21,7 +21,7 @@
 
 	.icon {
 		transition: 0.7s;
-		width: 100px;
+		width: 75px;
 	}
 
 	.icon:hover {

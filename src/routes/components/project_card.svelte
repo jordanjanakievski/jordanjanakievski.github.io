@@ -25,7 +25,7 @@
 
 <style>
 	h2 {
-		font-size: 20px;
+		font-size: 25px;
 		color: black;
 		margin: 0;
 		padding-top: 10px;
@@ -39,6 +39,7 @@
 		background-color: white;
 		margin: 20px 0px 20px 0px;
 		text-align: center;
+		margin: 20px;
 		padding: 10px;
 		width: 250px;
 		height: 350px;

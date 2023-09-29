@@ -16,14 +16,74 @@
 			}
 		}
 	};
-	// Fetch request to get data from https://api.chess.com/pub/player/jsquared2924/stats
+
+	/**
+	 * @type {any}
+	 */
+	let database_fetch = [{
+		title: '',
+		value: '',
+		image: '',
+		link: '',
+	},]
+
+	const chess_api_url = "https://api.chess.com/pub/player/jsquared2924/stats"
+	const database_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6C-epQg8Zs16RFBYd26ADKpupBFx-vW73wOY-BSXxej6mb6I6tnjjr3puBkUT4e_06udA-638Lrh7/pubhtml"
+
+	/**
+	 * @type {any[]}
+	 */
+	let project_data = []
+	/**
+	 * @type {any[]}
+	 */
+	let numbers_data = []
+
+	// Fetch request to get data from Chess.com API
 	onMount(async () => {
-		await fetch(`https://api.chess.com/pub/player/jsquared2924/stats`)
+		await fetch(chess_api_url)
 			.then((res) => res.json())
 			.then((data) => {
 				chess_api_data.chess_rapid.last.rating = data.chess_rapid.last.rating;
 			});
 	});
+
+	// Fetch request to get data from Google Sheets Database
+	// This should not save the first row in the database as it is the header
+	onMount(async () => {
+		await fetch(database_url)
+			.then((res) => res.text())
+			.then((data) => {
+				let parser = new DOMParser();
+				let doc = parser.parseFromString(data, "text/html");
+				let table = doc.querySelector("table");
+				if (table == null) {
+					return;
+				}
+				let rows = table.querySelectorAll("tr");
+				let row_data = [];
+				for (let i = 2; i < rows.length; i++) {
+					let row = rows[i];
+					let cols = row.querySelectorAll("td");
+					let col_data = [];
+					for (let j = 0; j < cols.length; j++) {
+						col_data.push(cols[j].innerText);
+					}
+					row_data.push(col_data);
+				}
+				database_fetch = row_data.map((row) => {
+					return {
+						title: row[0],
+						value: row[1],
+						image: row[2],
+						link: row[3],
+					};
+				});
+			});
+			project_data = database_fetch.splice(4, database_fetch.length - 1)
+			numbers_data = database_fetch.splice(0, 4)
+	});
+
 </script>
 
 <svelte:window bind:scrollY={scroll} />
@@ -37,10 +97,6 @@
 <div class="about">
 	<h2>About Me</h2>
 	<div class="about-content">
-		<div class="about-images">
-			<img class="memoji" src="images/memoji-hand-raise.png" alt="Memoji" />
-			<img class="memoji" src="images/memoji-laptop.png" alt="Memoji" />
-		</div>
 		<p>
 			Hi, my name is Jordan!
 			<br /><br />
@@ -69,41 +125,32 @@
 				data={chess_api_data.chess_rapid.last.rating}
 				icon="chess-pawn"
 			/>
-			<DataCard title="Climbing Grade" data="v5" icon="man-climbing-light-skin-tone" />
-			<DataCard title="Matches Officiated" data="300+" icon="soccer-ball" />
-			<DataCard title="Watches Collected" data="5" icon="watch" />
+			{#each numbers_data as data}
+				<DataCard
+					title={data.title}
+					data={data.value}
+					icon={data.image}
+				/>
+			{/each}
 		</div>
 	</div>
 </div>
 <div class="projects">
 	<h2>Projects</h2>
 	<div class="project-cards">
-		<ProjectCard
-			title="Plankton Eye Mobile App"
-			icon="microscope"
-			url="https://github.com/jordanjanakievski/plankton_eye"
-		/>
-		<ProjectCard
-			title="Portfolio Website"
-			icon="artist-palette"
-			url="https://github.com/jordanjanakievski/jordanjanakievski.github.io"
-		/>
-		<ProjectCard
-			title="UofT Blueprint Website"
-			icon="desktop-computer"
-			url="https://github.com/uoftblueprint/uoftblueprint.github.io"
-		/>
-		<ProjectCard
-			title="Toronto Community Employment Services (TCES) CRM"
-			icon="clipboard"
-			url="https://github.com/uoftblueprint/tces"
-		/>
+		{#each project_data as project}
+			<ProjectCard
+				title={project.title}
+				icon={project.image}
+				url={project.link}
+			/>
+		{/each}
 	</div>
 </div>
 <br /><br />
 <br /><br />
 <div class="contact">
-	<h2>Thank you for visiting</h2>
+	<h2>Thanks for visiting!</h2>
 	<h4>You can also find me at any of these places...</h4>
 	<div class="contact-contents">
 		<div class="contact-links">
@@ -191,7 +238,7 @@
 		max-width: 900px;
 	}
 
-	.about-images {
+	/* .about-images {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -200,7 +247,7 @@
 	.memoji {
 		width: 400px;
 		height: 400px;
-	}
+	} */
 
 	.about-cards {
 		display: flex;
@@ -213,6 +260,7 @@
 		display: flex;
 		justify-content: space-around;
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.projects {
@@ -231,7 +279,8 @@
 	.project-cards {
 		display: flex;
 		justify-content: space-around;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.contact {
@@ -245,19 +294,21 @@
 		flex-direction: column;
 		margin-left: 20%;
 		margin-right: 20%;
+		margin-bottom: 10vh;
 	}
 
 	.contact-contents {
 		display: flex;
 		justify-content: space-around;
 		flex-direction: column;
-		height: 400px;
+		height: 200px;
 	}
 
 	.contact-links {
 		display: flex;
 		justify-content: space-evenly;
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	@media only screen and (max-width: 1160px) {
@@ -265,14 +316,14 @@
 			flex-direction: column;
 		}
 
-		.about-images {
+		/* .about-images {
 			flex-direction: row;
 		}
 
 		.memoji {
 			width: 300px;
 			height: 300px;
-		}
+		} */
 	}
 
 	@media only screen and (max-width: 840px) {
@@ -294,6 +345,10 @@
 			font-size: 30px;
 		}
 
+		h4 {
+			font-size: 24px;
+		}
+
 		p {
 			font-size: 18px;
 		}
@@ -303,10 +358,10 @@
 			margin-right: 10%;
 		}
 
-		.memoji {
+		/* .memoji {
 			width: 160px;
 			height: 160px;
-		}
+		} */
 
 		.projects {
 			flex-direction: row;

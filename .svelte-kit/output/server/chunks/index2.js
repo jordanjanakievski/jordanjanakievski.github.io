@@ -87,6 +87,13 @@ function escape_attribute_value(value) {
   const should_escape = typeof value === "string" || value && typeof value === "object";
   return should_escape ? escape(value, true) : value;
 }
+function each(items, fn) {
+  let str = "";
+  for (let i = 0; i < items.length; i += 1) {
+    str += fn(items[i], i);
+  }
+  return str;
+}
 const missing_component = {
   $$render: () => ""
 };
@@ -156,6 +163,7 @@ export {
   escape as e,
   add_styles as f,
   getContext as g,
+  each as h,
   missing_component as m,
   noop as n,
   setContext as s,
