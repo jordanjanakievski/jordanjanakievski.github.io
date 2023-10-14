@@ -110,6 +110,8 @@ const options = {
     app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + `/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content="Jordan Janakievski's personal website" />
+		<meta name="keywords" content="jordan janakievski, janakievski, jordan, university of toronto, computer science, software engineer, tacoma, seattle" />
+		<meta name="google-site-verification" content="LTGTz9Wqd7pF-DKWJ5VjBX1Jkxvk8he6EAylgIrK51s" />
 		<meta name="robots" content="index, follow" />
 		<title>Jordan Janakievski</title>
 		` + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
@@ -173,7 +175,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "91g4k6"
+  version_hash: "wds2vy"
 };
 function get_hooks() {
   return {};
