@@ -4,6 +4,7 @@
 	import DataCard from './components/data_card.svelte';
 	import ProjectCard from './components/project_card.svelte';
 	import ContactIcon from './components/contact_icon.svelte';
+	import ContactCard from './components/contact_card.svelte';
 
 	/**
 	 * @type {any}
@@ -151,6 +152,7 @@
 <br /><br />
 <div class="contact">
 	<h2>Thanks for visiting!</h2>
+	<ContactCard title="Jordan Janakievski"/>
 	<h4>You can also find me at any of these places...</h4>
 	<div class="contact-contents">
 		<div class="contact-links">
