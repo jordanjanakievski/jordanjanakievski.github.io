@@ -21,24 +21,27 @@
 	/**
 	 * @type {any}
 	 */
-	let database_fetch = [{
-		title: '',
-		value: '',
-		image: '',
-		link: '',
-	},]
+	let database_fetch = [
+		{
+			title: '',
+			value: '',
+			image: '',
+			link: ''
+		}
+	];
 
-	const chess_api_url = "https://api.chess.com/pub/player/jsquared2924/stats"
-	const database_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6C-epQg8Zs16RFBYd26ADKpupBFx-vW73wOY-BSXxej6mb6I6tnjjr3puBkUT4e_06udA-638Lrh7/pubhtml"
+	const chess_api_url = 'https://api.chess.com/pub/player/jsquared2924/stats';
+	const database_url =
+		'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6C-epQg8Zs16RFBYd26ADKpupBFx-vW73wOY-BSXxej6mb6I6tnjjr3puBkUT4e_06udA-638Lrh7/pubhtml';
 
 	/**
 	 * @type {any[]}
 	 */
-	let project_data = []
+	let project_data = [];
 	/**
 	 * @type {any[]}
 	 */
-	let numbers_data = []
+	let numbers_data = [];
 
 	// Fetch request to get data from Chess.com API
 	onMount(async () => {
@@ -56,16 +59,16 @@
 			.then((res) => res.text())
 			.then((data) => {
 				let parser = new DOMParser();
-				let doc = parser.parseFromString(data, "text/html");
-				let table = doc.querySelector("table");
+				let doc = parser.parseFromString(data, 'text/html');
+				let table = doc.querySelector('table');
 				if (table == null) {
 					return;
 				}
-				let rows = table.querySelectorAll("tr");
+				let rows = table.querySelectorAll('tr');
 				let row_data = [];
 				for (let i = 2; i < rows.length; i++) {
 					let row = rows[i];
-					let cols = row.querySelectorAll("td");
+					let cols = row.querySelectorAll('td');
 					let col_data = [];
 					for (let j = 0; j < cols.length; j++) {
 						col_data.push(cols[j].innerText);
@@ -77,14 +80,13 @@
 						title: row[0],
 						value: row[1],
 						image: row[2],
-						link: row[3],
+						link: row[3]
 					};
 				});
 			});
-			project_data = database_fetch.splice(4, database_fetch.length - 1)
-			numbers_data = database_fetch.splice(0, 4)
+		project_data = database_fetch.splice(4, database_fetch.length - 1);
+		numbers_data = database_fetch.splice(0, 4);
 	});
-
 </script>
 
 <svelte:window bind:scrollY={scroll} />
@@ -104,9 +106,9 @@
 			I am an undergrad studying computer science at the University of Toronto. Having grown up in Seattle,
 			I think of myself as someone of two countries, two cities, and two towers.
 			<br /><br />
-			My passion is to continue making a difference by developing software to improve people's
-			lives. Whether it be direct impact through a software solution or contributing to a company that
-			serves to better its community, I believe software can empower change and lead people and organizations
+			My passion is to continue making a difference by developing software to improve people's lives.
+			Whether it be direct impact through a software solution or contributing to a company that serves
+			to better its community, I believe software can empower change and lead people and organizations
 			to achieve the best possible outcomes.
 			<br /><br />
 			When away from the computer, I enjoy exploring the outdoors. Whether it be kayaking, SCUBA diving,
@@ -127,11 +129,7 @@
 				icon="chess-pawn"
 			/>
 			{#each numbers_data as data}
-				<DataCard
-					title={data.title}
-					data={data.value}
-					icon={data.image}
-				/>
+				<DataCard title={data.title} data={data.value} icon={data.image} />
 			{/each}
 		</div>
 	</div>
@@ -140,11 +138,7 @@
 	<h2>Projects</h2>
 	<div class="project-cards">
 		{#each project_data as project}
-			<ProjectCard
-				title={project.title}
-				icon={project.image}
-				url={project.link}
-			/>
+			<ProjectCard title={project.title} icon={project.image} url={project.link} />
 		{/each}
 	</div>
 </div>
@@ -152,7 +146,7 @@
 <br /><br />
 <div class="contact">
 	<h2>Thanks for visiting!</h2>
-	<ContactCard title="Jordan Janakievski"/>
+	<ContactCard title="Jordan Janakievski" />
 	<h4>You can also find me at any of these places...</h4>
 	<div class="contact-contents">
 		<div class="contact-links">

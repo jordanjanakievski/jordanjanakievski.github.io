@@ -1,4 +1,5 @@
 <script>
+	import Icon from '@iconify/svelte';
 	/**
 	 * @type {any}
 	 */
@@ -17,7 +18,9 @@
 <a href={url}>
 	<div class="polaroid">
 		<div class="polaroid-image-backdrop">
-			<img class="polaroid-image" src="icons/{icon}.svg" alt={icon} width="210" />
+			<div class="polaroid-image">
+				<Icon icon={`openmoji:${icon}`} style="font-size: 210px" />
+			</div>
 		</div>
 		<h2>{title}</h2>
 	</div>

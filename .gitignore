@@ -24,4 +24,4 @@ yarn-error.log*
 
 /.vscode
 
-/.svelte-kit
+.svelte-kit

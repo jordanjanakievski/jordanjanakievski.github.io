@@ -1,4 +1,5 @@
 # Jordan Janakievski Portfolio Website
+
 ![Svelte](https://img.shields.io/badge/svelte-%2320232a.svg?style=for-the-badge&logo=svelte)
 ![Typescript](https://img.shields.io/badge/Typescript-%2320232a.svg?style=for-the-badge&logo=typescript)
 ![Google Sheets](https://img.shields.io/badge/Google_Sheets-%2320232a.svg?style=for-the-badge&logo=GoogleSheets)
@@ -40,8 +41,8 @@ npm run deploy
 ```
 
 ## Database
-Google Sheets is being used as the data source for page content, feel free to take a look at how it works
 
+Google Sheets is being used as the data source for page content, feel free to take a look at how it works
 
 ## Thank you!
 

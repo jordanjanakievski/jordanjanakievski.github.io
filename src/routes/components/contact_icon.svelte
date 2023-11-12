@@ -1,4 +1,5 @@
 <script>
+	import Icon from '@iconify/svelte';
 	/**
 	 * @type {any}
 	 */
@@ -10,8 +11,8 @@
 </script>
 
 <!-- Create a polaroid shaped card that will display an image with a title below it -->
-<a href={url}>
-	<img class="icon" src="icons/{icon}.svg" alt={icon} />
+<a href={url} class="icon">
+	<Icon icon={`openmoji:${icon}`} style="font-size: 75px" />
 </a>
 
 <style>
@@ -21,17 +22,10 @@
 
 	.icon {
 		transition: 0.7s;
-		width: 75px;
 	}
 
 	.icon:hover {
 		transition: 0.7s;
 		filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-	}
-
-	@media only screen and (max-width: 840px) {
-		.icon {
-			width: 80px;
-		}
 	}
 </style>

@@ -1,4 +1,4 @@
-import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from "./index2.js";
+import { c as create_ssr_component, a as setContext, v as validate_component, m as missing_component } from "./index.js";
 let base = "";
 let assets = base;
 const initial = { base, assets };
@@ -99,8 +99,10 @@ const options = {
   app_template_contains_nonce: false,
   csp: { "mode": "auto", "directives": { "upgrade-insecure-requests": false, "block-all-mixed-content": false }, "reportOnly": { "upgrade-insecure-requests": false, "block-all-mixed-content": false } },
   csrf_check_origin: true,
+  track_server_fetches: false,
   embedded: false,
   env_public_prefix: "PUBLIC_",
+  env_private_prefix: "",
   hooks: null,
   // added lazily, via `get_hooks`
   preload_strategy: "modulepreload",
@@ -130,6 +132,7 @@ const options = {
 				align-items: center;
 				justify-content: center;
 				height: 100vh;
+				margin: 0;
 			}
 
 			.error {
@@ -175,7 +178,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "u43rsg"
+  version_hash: "171lh1y"
 };
 function get_hooks() {
   return {};
@@ -183,12 +186,12 @@ function get_hooks() {
 export {
   assets as a,
   base as b,
-  set_assets as c,
-  set_building as d,
-  set_private_env as e,
+  set_public_env as c,
+  set_assets as d,
+  set_building as e,
   get_hooks as g,
   options as o,
   public_env as p,
   reset as r,
-  set_public_env as s
+  set_private_env as s
 };

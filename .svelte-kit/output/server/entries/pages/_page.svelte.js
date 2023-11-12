@@ -1,17 +1,17 @@
-import { c as create_ssr_component, e as escape, d as add_attribute, f as add_styles, v as validate_component, h as each } from "../../chunks/index2.js";
+import { c as create_ssr_component, e as escape, d as add_attribute, f as add_styles, v as validate_component, h as each } from "../../chunks/index.js";
 const down_arrow_svelte_svelte_type_style_lang = "";
-const css$4 = {
+const css$5 = {
   code: ".down-arrow.svelte-smt0r9{margin-top:500px}",
   map: null
 };
 const Down_arrow = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$4);
+  $$result.css.add(css$5);
   return `
 
 ${``}`;
 });
 const data_card_svelte_svelte_type_style_lang = "";
-const css$3 = {
+const css$4 = {
   code: "h2.svelte-1n41lew.svelte-1n41lew.svelte-1n41lew{font-size:24px;margin:0}.polaroid.svelte-1n41lew.svelte-1n41lew.svelte-1n41lew{background-color:white;margin:20px;text-align:center;padding:10px;width:150px;transition:0.7s}.polaroid.svelte-1n41lew.svelte-1n41lew.svelte-1n41lew:hover{transition:0.7s;box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2)}.polaroid.svelte-1n41lew:hover>.polaroid-image-backdrop.svelte-1n41lew>.polaroid-image.svelte-1n41lew{transition:0.5s;filter:drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))}.polaroid-image.svelte-1n41lew.svelte-1n41lew.svelte-1n41lew{transition:0.5s}.polaroid-image-backdrop.svelte-1n41lew.svelte-1n41lew.svelte-1n41lew{transition:0.7s;background-color:#e0f1ff}.polaroid.svelte-1n41lew:hover>.polaroid-image-backdrop.svelte-1n41lew.svelte-1n41lew{transition:0.5s;box-shadow:inset 0 4px 8px 0 rgba(0, 0, 0, 0.2)}",
   map: null
 };
@@ -25,7 +25,7 @@ const Data_card = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     $$bindings.data(data);
   if ($$props.icon === void 0 && $$bindings.icon && icon !== void 0)
     $$bindings.icon(icon);
-  $$result.css.add(css$3);
+  $$result.css.add(css$4);
   return `
 <div class="polaroid svelte-1n41lew"><div class="polaroid-image-backdrop svelte-1n41lew"><img class="polaroid-image svelte-1n41lew" src="${"icons/" + escape(icon, true) + ".svg"}"${add_attribute("alt", icon, 0)} width="100"></div>
 	<h2 class="svelte-1n41lew">${escape(title)}</h2>
@@ -33,7 +33,7 @@ const Data_card = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 </div>`;
 });
 const project_card_svelte_svelte_type_style_lang = "";
-const css$2 = {
+const css$3 = {
   code: "h2.svelte-fzf1s8.svelte-fzf1s8.svelte-fzf1s8{font-size:25px;color:black;margin:0;padding-top:10px}a.svelte-fzf1s8.svelte-fzf1s8.svelte-fzf1s8{text-decoration:none}.polaroid.svelte-fzf1s8.svelte-fzf1s8.svelte-fzf1s8{background-color:white;margin:20px 0px 20px 0px;text-align:center;margin:20px;padding:10px;width:250px;height:350px;transition:0.7s}.polaroid.svelte-fzf1s8.svelte-fzf1s8.svelte-fzf1s8:hover{transition:0.7s;box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2)}.polaroid.svelte-fzf1s8:hover>.polaroid-image-backdrop.svelte-fzf1s8>.polaroid-image.svelte-fzf1s8{transition:0.7s;filter:drop-shadow(6px 10px 4px rgb(0 0 0 / 0.4))}.polaroid-image.svelte-fzf1s8.svelte-fzf1s8.svelte-fzf1s8{transition:0.7s}.polaroid-image-backdrop.svelte-fzf1s8.svelte-fzf1s8.svelte-fzf1s8{transition:0.7s;background-color:#e0f1ff;width:250px;height:240px}.polaroid.svelte-fzf1s8:hover>.polaroid-image-backdrop.svelte-fzf1s8.svelte-fzf1s8{transition:0.5s;box-shadow:inset 0 4px 8px 0 rgba(0, 0, 0, 0.2)}",
   map: null
 };
@@ -47,14 +47,14 @@ const Project_card = create_ssr_component(($$result, $$props, $$bindings, slots)
     $$bindings.icon(icon);
   if ($$props.url === void 0 && $$bindings.url && url !== void 0)
     $$bindings.url(url);
-  $$result.css.add(css$2);
+  $$result.css.add(css$3);
   return `
 <a${add_attribute("href", url, 0)} class="svelte-fzf1s8"><div class="polaroid svelte-fzf1s8"><div class="polaroid-image-backdrop svelte-fzf1s8"><img class="polaroid-image svelte-fzf1s8" src="${"icons/" + escape(icon, true) + ".svg"}"${add_attribute("alt", icon, 0)} width="210"></div>
 		<h2 class="svelte-fzf1s8">${escape(title)}</h2></div>
 </a>`;
 });
 const contact_icon_svelte_svelte_type_style_lang = "";
-const css$1 = {
+const css$2 = {
   code: "a.svelte-190fm9d{text-decoration:none}.icon.svelte-190fm9d{transition:0.7s;width:75px}.icon.svelte-190fm9d:hover{transition:0.7s;filter:drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))}@media only screen and (max-width: 840px){.icon.svelte-190fm9d{width:80px}}",
   map: null
 };
@@ -65,10 +65,29 @@ const Contact_icon = create_ssr_component(($$result, $$props, $$bindings, slots)
     $$bindings.icon(icon);
   if ($$props.url === void 0 && $$bindings.url && url !== void 0)
     $$bindings.url(url);
-  $$result.css.add(css$1);
+  $$result.css.add(css$2);
   return `
 <a${add_attribute("href", url, 0)} class="svelte-190fm9d"><img class="icon svelte-190fm9d" src="${"icons/" + escape(icon, true) + ".svg"}"${add_attribute("alt", icon, 0)}>
 </a>`;
+});
+const contact_card_svelte_svelte_type_style_lang = "";
+const css$1 = {
+  code: "h2.svelte-17z20wo.svelte-17z20wo{font-size:25px;color:black;margin:0;padding-top:10px}h4.svelte-17z20wo.svelte-17z20wo{font-size:20px;color:black;margin:0;padding-top:10px}.polaroid.svelte-17z20wo.svelte-17z20wo{background-color:transparent;margin:20px 0px 20px 0px;text-align:center;margin:20px;width:250px;height:350px;transition:0.7s;perspective:1000px}.polaroid-inner.svelte-17z20wo.svelte-17z20wo{background-color:white;border:10px solid white;position:relative;width:100%;height:100%;text-align:center;transition:transform 0.7s;transform-style:preserve-3d}.polaroid-inner.svelte-17z20wo.svelte-17z20wo:hover{box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2)}.polaroid.svelte-17z20wo:hover>.polaroid-inner.svelte-17z20wo{transform:rotateY(180deg)}.polaroid-front.svelte-17z20wo.svelte-17z20wo,.polaroid-back.svelte-17z20wo.svelte-17z20wo{position:absolute;width:100%;height:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden}.polaroid-image.svelte-17z20wo.svelte-17z20wo{width:250px}.polaroid-back-image.svelte-17z20wo.svelte-17z20wo{width:150px}.polaroid-back.svelte-17z20wo.svelte-17z20wo{transform:rotateY(180deg);display:flex;flex-direction:column;justify-content:center;flex-wrap:wrap;align-content:center;align-items:center}",
+  map: null
+};
+const Contact_card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { title } = $$props;
+  if ($$props.title === void 0 && $$bindings.title && title !== void 0)
+    $$bindings.title(title);
+  $$result.css.add(css$1);
+  return `<div class="polaroid svelte-17z20wo"><div class="polaroid-inner svelte-17z20wo"><div class="polaroid-front svelte-17z20wo"><img class="polaroid-image svelte-17z20wo" src="images/profile.png" alt="Jordan's Profile" width="210">
+            <h2 class="svelte-17z20wo">${escape(title)}</h2></div>
+        <div class="polaroid-back svelte-17z20wo"><h4 class="svelte-17z20wo">Computer Science</h4>
+            <h4 class="svelte-17z20wo">University of Toronto</h4>
+            <h4 class="svelte-17z20wo">Class of 2025</h4>
+            <br>
+            <img class="polaroid-back-image svelte-17z20wo" src="images/uoft.png" alt="University of Toronto Logo"></div></div>
+</div>`;
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
@@ -146,6 +165,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 <br><br>
 <br><br>
 <div class="contact svelte-1dnuj6z"><h2 class="svelte-1dnuj6z">Thanks for visiting!</h2>
+	${validate_component(Contact_card, "ContactCard").$$render($$result, { title: "Jordan Janakievski" }, {}, {})}
 	<h4 class="svelte-1dnuj6z">You can also find me at any of these places...</h4>
 	<div class="contact-contents svelte-1dnuj6z"><div class="contact-links svelte-1dnuj6z">${validate_component(Contact_icon, "ContactIcon").$$render(
     $$result,
