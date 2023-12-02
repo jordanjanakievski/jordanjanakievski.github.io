@@ -158,6 +158,7 @@
   <div class="contact-contents">
     <div class="contact-links">
       <ContactIcon icon="e-mail" url="mailto:jordan.a.janakievski@gmail.com" />
+      <ContactIcon icon="calendar" url="https://cal.com/jordanjanakievski" />
       <ContactIcon icon="github" url="https://github.com/jordanjanakievski" />
       <ContactIcon icon="gitlab" url="https://gitlab.com/jordanjanakievski" />
       <ContactIcon
@@ -244,17 +245,6 @@
     max-width: 900px;
   }
 
-  /* .about-images {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-	}
-
-	.memoji {
-		width: 400px;
-		height: 400px;
-	} */
-
   .about-cards {
     display: flex;
     justify-content: center;
@@ -303,23 +293,6 @@
     margin-bottom: 10vh;
   }
 
-  .cal-button {
-	border-color: #fb2f2f;
-	background-color: #e0f1ff;
-	color: #fb2f2f;
-	padding: 15px 32px;
-	text-align: center;
-	font-size: 24px;
-	border-radius: 12px;
-	margin-bottom: 20px;
-	transition: 0.5s;
-  }
-
-  .cal-button:hover {
-	transition: 0.5s;
-	filter: drop-shadow(0 0 0.75rem rgb(0 0 0 / 0.4));
-  }
-
   .contact-contents {
     display: flex;
     justify-content: space-around;
@@ -338,15 +311,6 @@
     .about-content {
       flex-direction: column;
     }
-
-    /* .about-images {
-			flex-direction: row;
-		}
-
-		.memoji {
-			width: 300px;
-			height: 300px;
-		} */
   }
 
   @media only screen and (max-width: 840px) {
@@ -380,11 +344,6 @@
       margin-left: 10%;
       margin-right: 10%;
     }
-
-    /* .memoji {
-			width: 160px;
-			height: 160px;
-		} */
 
     .projects {
       flex-direction: row;
