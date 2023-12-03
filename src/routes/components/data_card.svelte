@@ -41,26 +41,26 @@
   }
 
   .polaroid:hover {
-    transition: 0.7s;
+    transition: 0.25s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
 
   .polaroid:hover > .polaroid-image-backdrop > .polaroid-image {
-    transition: 0.5s;
+    transition: 0.25s;
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
 
   .polaroid-image {
-    transition: 0.5s;
+    transition: 0.25s;
   }
 
   .polaroid-image-backdrop {
-    transition: 0.7s;
+    transition: 0.25s;
     background-color: #e0f1ff;
   }
 
   .polaroid:hover > .polaroid-image-backdrop {
-    transition: 0.5s;
+    transition: 0.25s;
     box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 </style>

@@ -21,11 +21,11 @@
   }
 
   .icon {
-    transition: 0.7s;
+    transition: 0.25s;
   }
 
   .icon:hover {
-    transition: 0.7s;
+    transition: 0.25s;
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
 </style>

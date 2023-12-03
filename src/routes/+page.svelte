@@ -153,7 +153,6 @@
 <br /><br />
 <div class="contact">
   <h2>Thanks for visiting!</h2>
-  <ContactCard title="Jordan Janakievski" />
   <h4>You can also find me at any of these places...</h4>
   <div class="contact-contents">
     <div class="contact-links">
@@ -280,7 +279,7 @@
   }
 
   .contact {
-    min-height: 80vh;
+    min-height: 100vh;
     max-width: 1440px;
     width: auto;
     position: relative;
@@ -290,7 +289,6 @@
     flex-direction: column;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 10vh;
   }
 
   .contact-contents {
