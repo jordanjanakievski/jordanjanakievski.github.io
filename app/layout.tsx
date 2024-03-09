@@ -4,11 +4,12 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { ModeToggle } from "@/components/custom/mode-toggle";
+import Navigation from "@/components/custom/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const alliance = localFont({
-  src: "../assets/font/Alliance-No-2-Regular.woff2",
+  src: "../assets/fonts/Alliance-No-2-Regular.woff2",
   variable: "--font-alliance-no2-regular",
 });
 
@@ -26,8 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} ${alliance.className}`}>
         <ThemeProvider attribute="class" defaultTheme="system">
-          <ModeToggle />
-
+          <Navigation className="absolute top-0 right-0 m-4" />
           {children}
         </ThemeProvider>
       </body>

@@ -2,10 +2,6 @@ import Link from "next/link";
 import localFont from "next/font/local";
 import { Button } from "@/components/ui/button";
 
-const alliance = localFont({
-  src: "../assets/font/Alliance-No-2-Regular.woff2",
-});
-
 export default function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center h-screen space-y-8">
