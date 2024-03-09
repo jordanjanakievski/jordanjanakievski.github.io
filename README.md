@@ -1,51 +1,36 @@
-# Jordan Janakievski Portfolio Website
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![Svelte](https://img.shields.io/badge/svelte-%2320232a.svg?style=for-the-badge&logo=svelte)
-![Typescript](https://img.shields.io/badge/Typescript-%2320232a.svg?style=for-the-badge&logo=typescript)
-![Google Sheets](https://img.shields.io/badge/Google_Sheets-%2320232a.svg?style=for-the-badge&logo=GoogleSheets)
+## Getting Started
 
-## Running this project
-
-This is a Svelte project
+First, run the development server:
 
 ```bash
-# clone the project
-git clone https://github.com/jordanjanakievski/jordanjanakievski.github.io.git
-
-# run npm install in the root directory
-npm install
-```
-
-## Developing
-
-Once the node modules have been installed, you can run the project
-
-```bash
-# to run the development version of the project
 npm run dev
-
-# to build the production version of the project
-npm run build
-
-# to check the production version of the project (only after it has been built)
-npm run preview
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Deployment
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Once you have a build that you like, you can deploy the project to Github Pages
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-```bash
-# to deploy the project
-npm run deploy
-```
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Database
+## Learn More
 
-Google Sheets is being used as the data source for page content, feel free to take a look at how it works
+To learn more about Next.js, take a look at the following resources:
 
-## Thank you!
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-I can be reached at <jordan.a.janakievski@gmail.com> or the other links available on this codebase's website.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Thank you!
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

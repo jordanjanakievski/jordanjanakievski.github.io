@@ -1,0 +1,20 @@
+import Link from "next/link";
+import localFont from "next/font/local";
+import { Button } from "@/components/ui/button";
+
+const alliance = localFont({
+  src: "../assets/font/Alliance-No-2-Regular.woff2",
+});
+
+export default function NotFound() {
+  return (
+    <div className="flex flex-col items-center justify-center h-screen space-y-8">
+      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl font-heading">
+        404 - Page Not Found
+      </h1>
+      <Link href="/">
+        <Button>Go back home</Button>
+      </Link>
+    </div>
+  );
+}
