@@ -6,16 +6,16 @@ export default function MenuIcon({
   onClick: () => void;
 }): JSX.Element {
   return (
-    <div onClick={onClick}>
+    <div className="p-1">
       <div className={MenuStyles.nav}>
-        <input type="checkbox" />
-        <svg className={MenuStyles.svg}>
+        <input type="checkbox" onClick={onClick} />
+        <svg className={"stroke-current"}>
           <use xlinkHref="#menu" />
           <use xlinkHref="#menu" />
         </svg>
       </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg">
+      <svg xmlns="http://www.w3.org/2000/svg" width={10} height={10}>
         <symbol
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 56"
