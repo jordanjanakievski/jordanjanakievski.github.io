@@ -1,51 +1,33 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import MenuIcon from "./menu-icon/menu-icon";
 import { ModeToggle } from "@/components/custom/mode-toggle";
+
+// import MenuIcon from "./menu-icon/menu-icon";
 import Logo from "@/assets/icons/logo.png";
 
 export default function Navigation({ className }: { className?: string }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scrollPos, setScrollPos] = useState(0);
-
-  useEffect(() => {
-    const onScroll = () => {
-      setScrollPos(window.scrollY);
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const opacity = Math.max(1 - scrollPos / 400, 0);
-
-  if (opacity === 0) {
-    return null;
-  }
-
   return (
-    <div className="fixed w-full flex justify-between items-center z-50" style={{ opacity }}>
-      <Link href="/">
-        <Image
-          src={Logo}
-          alt="Jordan Janakievski Logo"
-          width={50}
-          className="m-2"
-        />
-      </Link>
-      <div className="absolute top-0 right-0 m-4 flex flex-col items-end">
+    <div className="w-[var(--max-width)] w-[50vw] min-w-full">
+      <div className="flex flex-row items-center justify-between">
+        <Link href="/">
+          <Image
+            src={Logo}
+            alt="Jordan Janakievski Logo"
+            width={80}
+            className="m-2"
+          />
+        </Link>
+        <ModeToggle />
+      </div>
+      {/* <div className="m-4 flex flex-col items-end">
         <div className="flex flex-row absolute">
-          <ModeToggle />
           <MenuIcon onClick={handleClick} />
           <div
-            className={`absolute top-10 right-0 m-4 flex flex-col items-center transition-opacity duration-500 ease-in-out ${
+            className={`top-10 right-0 m-4 flex flex-col items-center transition-opacity duration-500 ease-in-out ${
               isOpen ? "block" : "hidden"
             }`}
           >
@@ -71,6 +53,26 @@ export default function Navigation({ className }: { className?: string }) {
               Contact
             </Link>
           </div>
+        </div> */}
+      <div className="flex flex-row-reverse">
+        <div className="flex flex-row space-x-6">
+          <Link href="/about">
+            <h6 className="font-heading text-lg border-t border-transparent hover:border-red-500 transition-border duration-700 ease-in-out delay-200">
+              About
+            </h6>
+          </Link>
+          <h6 className="font-heading text-lg">/</h6>
+          <Link href="/projects">
+            <h6 className="font-heading text-lg border-t border-transparent hover:border-red-500 transition-border duration-700 ease-in-out delay-200">
+              Projects
+            </h6>
+          </Link>
+          <h6 className="font-heading text-lg">/</h6>
+          <Link href="/contact">
+            <h6 className="font-heading text-lg border-t border-transparent hover:border-red-500 transition-border duration-700 ease-in-out delay-200">
+              Contact
+            </h6>
+          </Link>
         </div>
       </div>
     </div>

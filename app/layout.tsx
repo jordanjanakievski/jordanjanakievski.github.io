@@ -27,12 +27,14 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body
-        className={`${inter.className} ${alliance.className} overflow-x-hidden`}
-      >
+      <body className={`${inter.className} ${alliance.className}`}>
         <ThemeProvider attribute="class" defaultTheme="system">
-          <Navigation />
-          {children}
+          <div className="flex flex-col items-center">
+            <div className="max-w-[var(--max-width)] ml-[10%] mr-[10%]">
+              <Navigation />
+              {children}
+            </div>
+          </div>
         </ThemeProvider>
       </body>
     </html>
