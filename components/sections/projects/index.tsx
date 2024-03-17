@@ -1,4 +1,4 @@
-"use client";
+import Link from "next/link";
 
 import {
   Accordion,
@@ -8,7 +8,16 @@ import {
 } from "@/components/ui/accordion";
 import { Carousel as CarouselComponent } from "@/components/custom/carousel";
 
-export function ProjectsSection() {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
+type ProjectType = {
+  title: string;
+  url: string;
+  description: string;
+};
+
+export function ProjectsSection({ data }: { data: any }) {
   return (
     <div className="mt-10 flex flex-col items-center">
       <h1 className="font-heading scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-6xl mb-5">
@@ -19,29 +28,11 @@ export function ProjectsSection() {
       </h3>
       <div className="flex flex-col items-center justify-center">
         <CarouselComponent
-          images={[
-            "images/ontolome.png",
-            "images/medscrybe.png",
-            "images/tces.png",
-            "images/plankton_eye.png",
-            "images/executive_llama.png",
-          ]}
-          titles={[
-            "OntoloMe",
-            "MedScrybe",
-            "TCES CRM",
-            "Plankton Eye",
-            "Executive Llama",
-          ]}
-          urls={[
-            "https://github.com/jordanjanakievski/ontolome",
-            "https://github.com/jordanjanakievski/MedScrybe",
-            "https://github.com/uoftblueprint/tces",
-            "https://github.com/jordanjanakievski/plankton_eye",
-            "https://github.com/jordanjanakievski/executive_llama",
-          ]}
+          images={data.images}
+          titles={data.titles}
+          urls={data.urls}
         />
-        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mt-5 mb-5">
+        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mt-16 mb-5">
           Additional Projects
         </h3>
         <Accordion
@@ -49,39 +40,24 @@ export function ProjectsSection() {
           collapsible
           className="w-[80vw] bg-background max-w-[var(--max-width)]"
         >
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="m-2">
-              MIPS Assembly Breakout
-            </AccordionTrigger>
-            <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger className="m-2">UToronto Chess</AccordionTrigger>
-            <AccordionContent>
-              Yes. It comes with default styles that matches the other
-              components&apos; aesthetic.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger className="m-2">
-              UofT Blueprint Website
-            </AccordionTrigger>
-            <AccordionContent>
-              Yes. It's animated by default, but you can disable it if you
-              prefer.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-4">
-            <AccordionTrigger className="m-2">
-              Portfolio Website
-            </AccordionTrigger>
-            <AccordionContent>
-              Yes. It's animated by default, but you can disable it if you
-              prefer.
-            </AccordionContent>
-          </AccordionItem>
+          {data.additional_projects.map(
+            (project: ProjectType, index: number) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="m-2">
+                  {project.title}
+                </AccordionTrigger>
+                <AccordionContent className="flex flex-row justify-between font-sans">
+                  <div className="m-2">{project.description}</div>
+                  <Link href={project.url} className="m-2">
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      className="drop-shadow-lg"
+                    />
+                  </Link>
+                </AccordionContent>
+              </AccordionItem>
+            )
+          )}
         </Accordion>
       </div>
     </div>

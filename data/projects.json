@@ -1,0 +1,45 @@
+{
+  "titles": [
+    "OntoloMe",
+    "MedScrybe",
+    "TCES CRM",
+    "Plankton Eye",
+    "Executive Llama"
+  ],
+  "images": [
+    "images/ontolome.png",
+    "images/medscrybe.png",
+    "images/tces.png",
+    "images/plankton_eye.png",
+    "images/executive_llama.png"
+  ],
+  "urls": [
+    "https://github.com/jordanjanakievski/ontolome",
+    "https://github.com/jordanjanakievski/MedScrybe",
+    "https://github.com/uoftblueprint/tces",
+    "https://github.com/jordanjanakievski/plankton_eye",
+    "https://github.com/jordanjanakievski/executive_llama"
+  ],
+  "additional_projects": [
+    {
+      "title": "MIPS Assembly Breakout",
+      "url": "https://github.com/jordanjanakievski/mips_breakout",
+      "description": "A simple breakout game written in MIPS Assembly"
+    },
+    {
+      "title": "UToronto Chess",
+      "url": "https://github.com/CSC207-2022F-UofT/course-project-utoronto-chess",
+      "description": "A chess game written in Java"
+    },
+    {
+      "title": "UofT Blueprint Website",
+      "url": "https://github.com/uoftblueprint/uoftblueprint.github.io",
+      "description": "The website for UofT Blueprint, a student-run software development organization"
+    },
+    {
+      "title": "Portfolio Website",
+      "url": "https://github.com/jordanjanakievski/jordanjanakievski.github.io",
+      "description": "The website you are currently viewing"
+    }
+  ]
+}

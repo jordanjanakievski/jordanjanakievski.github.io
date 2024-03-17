@@ -5,10 +5,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-interface CarouselProps {
-  images: string[];
-}
-
 export function Carousel({
   images,
   titles,
@@ -90,7 +86,7 @@ export function Carousel({
           <FontAwesomeIcon
             icon={faGithub}
             size="2x"
-            className="mt-2 drop-shadow-lg"
+            className="mt-4 drop-shadow-lg"
           />
         </Link>
       </div>
