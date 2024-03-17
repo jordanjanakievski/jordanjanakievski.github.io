@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import Navigation from "@/components/custom/navigation";
+import { FooterSection } from "@/components/sections/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,11 +30,10 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} ${alliance.className}`}>
         <ThemeProvider attribute="class" defaultTheme="system">
-          <div className="flex flex-col items-center">
-            <div className="max-w-[var(--max-width)] ml-[10%] mr-[10%]">
-              <Navigation />
-              {children}
-            </div>
+          <div className="items-center xs:px-10 px-3">
+            <Navigation />
+            {children}
+            <FooterSection />
           </div>
         </ThemeProvider>
       </body>

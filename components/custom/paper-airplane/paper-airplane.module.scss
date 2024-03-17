@@ -1,8 +1,7 @@
 .airplane {
   position: absolute;
   width: 100px;
-  right: 50%;
-  top: 50%;
+  top: 32%;
   animation: up 2s ease-in-out infinite alternate, rotate 4s ease-out infinite;
 }
 @keyframes moving {
@@ -12,7 +11,7 @@
 }
 @keyframes up {
   to {
-    margin-top: -200px;
+    margin-top: -100px;
   }
 }
 @keyframes rotate {

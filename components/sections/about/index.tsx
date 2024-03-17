@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
-export function About() {
+export function AboutSection() {
   const [ref, inView] = useInView({
     triggerOnce: false, // Change this to true if you want the video to stay paused once it's out of view
   });
@@ -29,7 +29,7 @@ export function About() {
       </div>
       <div className="absolute inset-0 bg-white bg-opacity-50 dark:bg-black dark:bg-opacity-50" />
       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-        <h2 className="text-4xl">Words on Video</h2>
+        <h2 className="text-6xl">What Makes Me Tick?</h2>
         {/* Add more text elements here */}
       </div>
     </div>

@@ -75,7 +75,14 @@ const config = {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
         heading: ["var(--font-alliance-no2-regular)"],
-      }
+      },
+      screens: {
+        'xs': '500px',
+        '2xs': '380px',
+      },
+      width: {
+        '128': '32rem',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
