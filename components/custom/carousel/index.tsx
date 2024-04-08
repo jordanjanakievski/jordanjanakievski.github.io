@@ -74,7 +74,7 @@ export function Carousel({
                 isLettersFading ? "opacity-0" : "opacity-100"
               }`}
             >
-              <h2 className="text-4xl font-semibold tracking-tight mt-4">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-semibold tracking-tight mt-4">
                 {titles[currentImageIndex]}
               </h2>
               <FontAwesomeIcon

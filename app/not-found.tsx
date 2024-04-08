@@ -5,7 +5,7 @@ import { PaperAirplane } from "@/components/custom/paper-airplane";
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center h-[75vh] space-y-8">
+    <div className="flex flex-col items-center justify-center h-[70vh] space-y-8">
       <PaperAirplane />
       <h1 className="font-heading text-3xl font-extrabold tracking-tight 2xs:text-4xl xs:text-5xl sm:text-6xl md:text-7xl">
         Oops!
