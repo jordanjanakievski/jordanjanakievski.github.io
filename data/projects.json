@@ -24,7 +24,7 @@
     {
       "title": "MIPS Assembly Breakout",
       "url": "https://github.com/jordanjanakievski/mips_breakout",
-      "description": "A simple breakout game written in MIPS Assembly"
+      "description": "A simple Brick Breaker game written in MIPS Assembly for a 256x256 pixel display"
     },
     {
       "title": "UToronto Chess",

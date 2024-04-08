@@ -11,7 +11,7 @@ import Logo from "@/assets/icons/logo.png";
 
 export default function Navigation({ className }: { className?: string }) {
   return (
-    <div>
+    <div className="xs:px-10 px-3">
       <div className="flex flex-row items-center justify-between">
         <Link href="/">
           <Image

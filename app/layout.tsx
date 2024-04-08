@@ -29,13 +29,13 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`${inter.className} ${alliance.className}`}>
-        <ThemeProvider attribute="class" defaultTheme="system">
-          <div className="items-center xs:px-10 px-3">
+        {/* <ThemeProvider attribute="class" defaultTheme="system"> */}
+          <div className="items-center">
             <Navigation />
             {children}
             <FooterSection />
           </div>
-        </ThemeProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );
