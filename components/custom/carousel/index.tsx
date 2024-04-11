@@ -46,7 +46,7 @@ export function Carousel({
     }, 700);
     setTimeout(() => {
       setIsLettersFading(false);
-    }, 1500);
+    }, 1200);
   };
 
   return (
@@ -62,7 +62,7 @@ export function Carousel({
           </button>
         </div>
         <div className="flex items-center justify-center relative">
-          <div style={{ width: "auto", height: "39.5vw", maxHeight: "700px" }}>
+          <div style={{ width: "auto", height: "39.5vw", maxHeight: "694px" }}>
             <img
               className="absolute z-[-2]"
               src="images/empty.png"
@@ -106,9 +106,10 @@ export function Carousel({
         </div>
       </div>
       <img
-        src="images/desk.jpg"
+        src="images/walnut_slab.jpg"
         alt="desk"
         className="w-[100vw] xs:h-6 sm:h-8 md:h-10 h-4"
+        style={{ boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.4)' }}
       />
     </div>
   );
