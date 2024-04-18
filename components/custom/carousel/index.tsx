@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { PiGithubLogoThin } from "react-icons/pi";
+import { PiArrowLeft } from "react-icons/pi";
+import { PiArrowRight } from "react-icons/pi";
+
 import Link from "next/link";
 
 export function Carousel({
@@ -54,9 +55,8 @@ export function Carousel({
       <div className="flex flex-row">
         <div className="flex items-center justify-center">
           <button onClick={prevImage}>
-            <FontAwesomeIcon
-              icon={faArrowLeft}
-              size="2x"
+            <PiArrowLeft
+              size={50}
               className="transition-colors duration-300 ease-in-out hover:border-primary border-background border-2 p-1"
             />
           </button>
@@ -77,10 +77,8 @@ export function Carousel({
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-semibold tracking-tight mt-4">
                 {titles[currentImageIndex]}
               </h2>
-              <FontAwesomeIcon
-                icon={faGithub}
-                size="2x"
-                className="mt-4 drop-shadow-lg"
+              <PiGithubLogoThin size={35} 
+                className="mt-2"
               />
             </div>
             <Link href={urls[currentImageIndex]}>
@@ -97,9 +95,8 @@ export function Carousel({
         </div>
         <div className="flex items-center justify-center">
           <button onClick={nextImage}>
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              size="2x"
+            <PiArrowRight
+              size={50}
               className="transition-colors duration-300 ease-in-out hover:border-primary border-background border-2 p-1"
             />
           </button>
@@ -109,7 +106,7 @@ export function Carousel({
         src="images/walnut_slab.jpg"
         alt="desk"
         className="w-[100vw] xs:h-6 sm:h-8 md:h-10 h-4"
-        style={{ boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.4)' }}
+        style={{ boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.4)" }}
       />
     </div>
   );

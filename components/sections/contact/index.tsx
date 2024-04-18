@@ -11,7 +11,7 @@ export function ContactSection() {
         Send me a message!
       </h1>
       <ContactForm />
-      <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mt-4">
+      <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mt-8">
         Or find me below...
       </h4>
     </div>

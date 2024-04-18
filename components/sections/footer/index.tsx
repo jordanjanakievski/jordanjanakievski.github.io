@@ -1,12 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faGitlab,
-} from "@fortawesome/free-brands-svg-icons";
-import { faCodeBranch, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { PiGithubLogoThin } from "react-icons/pi";
+import { PiLinkedinLogoThin } from "react-icons/pi";
+import { PiGitlabLogoThin } from "react-icons/pi";
+import { PiGitBranchThin } from "react-icons/pi";
+import { PiEnvelopeThin } from "react-icons/pi";
 
 export function FooterSection() {
   return (
@@ -17,47 +15,31 @@ export function FooterSection() {
             href="https://github.com/jordanjanakievski"
             className="drop-shadow-lg hover:drop-shadow-xl"
           >
-            <FontAwesomeIcon icon={faGithub} color="#6e5494 " className="h-6" />
+            <PiGithubLogoThin size={30} color={"purple"}/>
           </Link>
           <Link
             href="https://linkedin.com/in/jordan-janakievski"
             className="drop-shadow-lg"
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              color="#0077B5"
-              className="h-6"
-            />
+            <PiLinkedinLogoThin size={30} color={"blue"}/>
           </Link>
           <Link
             href="https://gitlab.com/jordanjanakievski"
             className="drop-shadow-lg"
           >
-            <FontAwesomeIcon
-              icon={faGitlab}
-              color="orange"
-              className="h-6 drop-shadow-sm"
-            />
+            <PiGitlabLogoThin size={30} color={"orange"}/>
           </Link>
           <Link
             href="https://github.com/jordanjanakievski/jordanjanakievski.github.io"
             className="drop-shadow-lg"
           >
-            <FontAwesomeIcon
-              icon={faCodeBranch}
-              color="#6cc644"
-              className="h-6"
-            />
+            <PiGitBranchThin size={30} color={"green"}/>
           </Link>
           <Link
             href="mailto:jordan.Link.janakievski@gmail.com"
             className="drop-shadow-lg"
           >
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              color="#FF2929"
-              className="h-6"
-            />
+            <PiEnvelopeThin size={30} color={"red"}/>
           </Link>
         </div>
       </div>

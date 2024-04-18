@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { PiPaperPlaneTiltThin } from "react-icons/pi";
 
 const formSchema = z.object({
   name: z.string().min(2).max(50),
@@ -92,7 +93,10 @@ export function ContactForm() {
           )}
         />
         <div className="flex flex-col items-center">
-          <Button type="submit">Send</Button>
+          <Button type="submit">
+            <PiPaperPlaneTiltThin size={20} className="mr-2" />
+            Send
+          </Button>
         </div>
       </form>
     </Form>

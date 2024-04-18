@@ -8,8 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Carousel as CarouselComponent } from "@/components/custom/carousel";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { PiGithubLogoThin } from "react-icons/pi";
 
 type ProjectType = {
   title: string;
@@ -49,10 +48,7 @@ export function ProjectsSection({ data }: { data: any }) {
                 <AccordionContent className="flex flex-row justify-between font-sans">
                   <div className="m-2">{project.description}</div>
                   <Link href={project.url} className="m-2">
-                    <FontAwesomeIcon
-                      icon={faGithub}
-                      className="drop-shadow-lg"
-                    />
+                    <PiGithubLogoThin size={20} />
                   </Link>
                 </AccordionContent>
               </AccordionItem>
