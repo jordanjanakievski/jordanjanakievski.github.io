@@ -30,11 +30,11 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} ${alliance.className}`}>
         {/* <ThemeProvider attribute="class" defaultTheme="system"> */}
-          <div className="items-center">
-            <Navigation />
-            {children}
-            <FooterSection />
-          </div>
+        <div className="items-center">
+          <Navigation />
+          {children}
+          <FooterSection />
+        </div>
         {/* </ThemeProvider> */}
       </body>
     </html>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { PiGithubLogoThin } from "react-icons/pi";
 import { PiArrowLeft } from "react-icons/pi";
@@ -32,6 +32,12 @@ export function Carousel({
       setIsLettersFading(false);
     }, 1500);
   };
+
+  useEffect(() => {
+    const interval = setInterval(nextImage, 10000);
+
+    return () => clearInterval(interval);
+  }, [nextImage]);
 
   const prevImage = () => {
     setIsFading(true);

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function AboutSection() {
   return (
-    <div className="mt-10 flex flex-col items-center justify-center w-[80vw] max-w-[1400px] mx-auto">
+    <div className="mt-10 mb-[20vh] flex flex-col items-center w-[80vw] max-w-[1400px] mx-auto">
       <h1 className="font-heading scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-6xl mb-10">
         About
       </h1>

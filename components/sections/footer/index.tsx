@@ -15,31 +15,31 @@ export function FooterSection() {
             href="https://github.com/jordanjanakievski"
             className="drop-shadow-lg hover:drop-shadow-xl"
           >
-            <PiGithubLogoThin size={30} color={"purple"}/>
+            <PiGithubLogoThin size={30} color={"#FF2929"}/>
           </Link>
           <Link
             href="https://linkedin.com/in/jordan-janakievski"
             className="drop-shadow-lg"
           >
-            <PiLinkedinLogoThin size={30} color={"blue"}/>
+            <PiLinkedinLogoThin size={30} color={"#7CA0FF"}/>
           </Link>
           <Link
             href="https://gitlab.com/jordanjanakievski"
             className="drop-shadow-lg"
           >
-            <PiGitlabLogoThin size={30} color={"orange"}/>
+            <PiGitlabLogoThin size={30} color={"#FF2929"}/>
           </Link>
           <Link
             href="https://github.com/jordanjanakievski/jordanjanakievski.github.io"
             className="drop-shadow-lg"
           >
-            <PiGitBranchThin size={30} color={"green"}/>
+            <PiGitBranchThin size={30} color={"#7CA0FF"}/>
           </Link>
           <Link
             href="mailto:jordan.Link.janakievski@gmail.com"
             className="drop-shadow-lg"
           >
-            <PiEnvelopeThin size={30} color={"red"}/>
+            <PiEnvelopeThin size={30} color={"#FF2929"}/>
           </Link>
         </div>
       </div>
