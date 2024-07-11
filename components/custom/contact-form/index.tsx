@@ -47,7 +47,6 @@ export function ContactForm() {
         },
         body: JSON.stringify(contactData),
       });
-      console.log("Response:", response);
 
       if (!response.ok) {
         throw new Error(
@@ -57,7 +56,7 @@ export function ContactForm() {
     } catch (error) {
       console.error("Error during form submission:", error);
     }
-    // form.reset();
+    form.reset();
   }
 
   return (

@@ -35,16 +35,14 @@ function iteratorToStream(iterator: any) {
 
 export async function POST(req: Request) {
   try {
-    console.log(req);
     const formData = await req.json();
-    console.log("HERE");
     const validatedData = formSchema.parse(formData);
 
     const mailOptions = {
       from: process.env.EMAIL,
       to: process.env.EMAIL,
       subject: `🎉 New message from ${validatedData.name}`,
-      text: `You have a new message from ${validatedData.name} (${validatedData.name}): ${validatedData.message}`,
+      text: `You have a new message from ${validatedData.name} (${validatedData.email}): ${validatedData.message}`,
     };
 
     transporter.sendMail(mailOptions);
