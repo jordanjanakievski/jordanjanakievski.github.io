@@ -14,10 +14,12 @@ export function ContactSection() {
         Send me a message!
       </h1>
       {/* on button click open an email address */}
-      <Button asChild>
-        <PiPaperPlaneTiltThin size={20} className="mr-2" />
-        <Link href="mailto:jordan.a.janakievski@gmail.com">Send</Link>
-      </Button>
+      <Link href="mailto:jordan.a.janakievski@gmail.com">
+        <Button>
+          <PiPaperPlaneTiltThin size={20} className="mr-2" />
+          Send
+        </Button>
+      </Link>
       {/* <ContactForm /> */}
       <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mt-8">
         Or find me below...
