@@ -14,7 +14,7 @@ export function ContactSection() {
         Send me a message!
       </h1>
       {/* on button click open an email address */}
-      <Button size="default">
+      <Button asChild>
         <PiPaperPlaneTiltThin size={20} className="mr-2" />
         <Link href="mailto:jordan.a.janakievski@gmail.com">Send</Link>
       </Button>
