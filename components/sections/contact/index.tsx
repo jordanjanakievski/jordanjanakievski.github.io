@@ -7,7 +7,7 @@ import { ContactForm } from "@/components/custom/contact-form";
 export function ContactSection() {
   return (
     <div className="mt-10 flex flex-col items-center justify-center w-[80vw] max-w-[1400px] mx-auto">
-      <h1 className="font-heading scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-6xl mb-10">
+      <h1 className="font-heading scroll-m-20 font-extrabold tracking-tight text-2xl xs:text-3xl sm:text-5xl lg:text-6xl mb-10">
         Send me a message!
       </h1>
       <ContactForm />

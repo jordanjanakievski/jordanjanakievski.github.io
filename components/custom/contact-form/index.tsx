@@ -32,8 +32,32 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {    
+    const contactData = {
+        name: values.name,
+        email: values.email,
+        message: values.message,
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contactData),
+      });
+      console.log("Response:", response);
+
+      if (!response.ok) {
+        throw new Error(
+          `Network response was not ok. Status code: ${response.status}`
+        );
+      }
+    } catch (error) {
+      console.error("Error during form submission:", error);
+    }
+    // form.reset();
   }
 
   return (

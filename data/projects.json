@@ -1,20 +1,17 @@
 {
   "titles": [
-    "OntoloMe",
     "MedScrybe",
     "TCES CRM",
     "Plankton Eye",
     "Executive Llama"
   ],
   "images": [
-    "images/ontolome.png",
     "images/medscrybe.png",
     "images/tces.png",
     "images/plankton_eye.png",
     "images/executive_llama.png"
   ],
   "urls": [
-    "https://github.com/jordanjanakievski/ontolome",
     "https://github.com/jordanjanakievski/MedScrybe",
     "https://github.com/uoftblueprint/tces",
     "https://github.com/jordanjanakievski/plankton_eye",
