@@ -36,7 +36,7 @@ export function AboutSection() {
             <br />
             <p>
               My passion is to continue making a difference by developing
-              software to improve people's lives. Whether it be direct impact
+              software to improve people&apos;s lives. Whether it be direct impact
               through a software solution or contributing to a company that
               serves to better its community, I believe software can empower
               change and lead people and organizations to achieve the best
