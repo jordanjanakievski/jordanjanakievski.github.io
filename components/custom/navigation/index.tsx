@@ -26,19 +26,19 @@ export default function Navigation({ className }: { className?: string }) {
       <div className="flex xs:flex-row-reverse flex-col items-center">
         <div className="flex flex-row space-x-6">
           <Link href="/about">
-            <h6 className="font-heading text-lg border-t border-transparent hover:border-red-500 transition-border duration-300 ease-in-out delay-200">
+            <h6 className="font-heading text-lg border-t border-transparent hover:border-blue-500 transition-border duration-300 ease-in-out delay-200">
               About
             </h6>
           </Link>
           <h6 className="font-heading text-lg">/</h6>
           <Link href="/projects">
-            <h6 className="font-heading text-lg border-t border-transparent hover:border-red-500 transition-border duration-300 ease-in-out delay-200">
+            <h6 className="font-heading text-lg border-t border-transparent hover:border-blue-500 transition-border duration-300 ease-in-out delay-200">
               Projects
             </h6>
           </Link>
           <h6 className="font-heading text-lg">/</h6>
           <Link href="/contact">
-            <h6 className="font-heading text-lg border-t border-transparent hover:border-red-500 transition-border duration-300 ease-in-out delay-200">
+            <h6 className="font-heading text-lg border-t border-transparent hover:border-blue-500 transition-border duration-300 ease-in-out delay-200">
               Contact
             </h6>
           </Link>

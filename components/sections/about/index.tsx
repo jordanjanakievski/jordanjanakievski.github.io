@@ -30,17 +30,17 @@ export function AboutSection() {
             <br />
             <p>
               I am an undergrad studying computer science at the University of
-              Toronto. Having grown up in Seattle, I think of myself as someone
-              of two countries, two cities, and two towers.
+              Toronto. Having grown up in Seattle, it seems that tall
+              observation towers are a common architectural theme in my life.
             </p>
             <br />
             <p>
               My passion is to continue making a difference by developing
-              software to improve people&apos;s lives. Whether it be direct impact
-              through a software solution or contributing to a company that
-              serves to better its community, I believe software can empower
-              change and lead people and organizations to achieve the best
-              possible outcomes.
+              software to improve people&apos;s lives. Whether it be direct
+              impact through a software solution or contributing to a company
+              that serves to better its community, I believe software can
+              empower change and lead people and organizations to achieve the
+              best possible outcomes.
             </p>
           </div>
         </div>
@@ -48,8 +48,8 @@ export function AboutSection() {
           <div className="lg:w-1/2">
             <p>
               When away from the computer, I enjoy exploring the outdoors.
-              Whether it be kayaking, SCUBA diving, or rock climbing, it is a
-              great way to appreciate nature. I also enjoy playing tennis and
+              Whether it be kayaking, SCUBA diving, or rock climbing, I find
+              nature to be extremely energizing. I also enjoy playing tennis and
               soccer as well as being a referee for youth soccer on the
               weekends.
             </p>
@@ -57,8 +57,9 @@ export function AboutSection() {
             <p>
               I am also a budding horologist. While I only have a small
               collection, I love learning about the mechanisms of a watch and
-              how they work together. I find the symbiotic relationship between
-              the watch and its wearer to be so interesting.
+              how each one tells a unique story of its wearer. One really
+              develops a symbiotic relationship with their timepiece, as it
+              becomes a part of their daily routine and given life through use.
             </p>
             <br />
           </div>
