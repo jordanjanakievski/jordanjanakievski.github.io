@@ -36,7 +36,7 @@ export function FooterSection() {
             <PiGitBranchThin size={30}/>
           </Link>
           <Link
-            href="mailto:jordan.Link.janakievski@gmail.com"
+            href="mailto:jordan.a.janakievski@gmail.com"
             className="drop-shadow-lg"
           >
             <PiEnvelopeThin size={30}/>
