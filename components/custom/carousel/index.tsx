@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
-import { PiGithubLogoThin } from "react-icons/pi";
 import { PiArrowLeft } from "react-icons/pi";
 import { PiArrowRight } from "react-icons/pi";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export function Carousel({
   images,
@@ -18,20 +18,18 @@ export function Carousel({
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentImage, setCurrentImage] = useState(images[0]);
   const [isFading, setIsFading] = useState(false);
-  const [isLettersFading, setIsLettersFading] = useState(false);
 
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     setIsFading(true);
-    setIsLettersFading(true);
     setTimeout(() => {
-      setCurrentImageIndex((currentImageIndex + 1) % images.length);
-      setCurrentImage(images[(currentImageIndex + 1) % images.length]);
-      setIsFading(false);
+      setCurrentImageIndex((prevIndex) => {
+        const nextIndex = (prevIndex + 1) % images.length;
+        setCurrentImage(images[nextIndex]);
+        setIsFading(false);
+        return nextIndex;
+      });
     }, 700);
-    setTimeout(() => {
-      setIsLettersFading(false);
-    }, 1500);
-  };
+  }, [images]);
 
   useEffect(() => {
     const interval = setInterval(nextImage, 10000);
@@ -41,60 +39,68 @@ export function Carousel({
 
   const prevImage = () => {
     setIsFading(true);
-    setIsLettersFading(true);
     setTimeout(() => {
       setCurrentImageIndex(
-        (currentImageIndex - 1 + images.length) % images.length
+        (currentImageIndex - 1 + images.length) % images.length,
       );
       setCurrentImage(
-        images[(currentImageIndex - 1 + images.length) % images.length]
+        images[(currentImageIndex - 1 + images.length) % images.length],
       );
       setIsFading(false);
     }, 700);
-    setTimeout(() => {
-      setIsLettersFading(false);
-    }, 1200);
   };
 
   return (
     <div className="flex flex-col items-center justify-center">
+      <h4
+        className={`transition-opacity duration-700 ease-in-out mt-4 text-lg sm:text-xl italic ${
+          isFading ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        {titles[currentImageIndex]}
+      </h4>
       <div className="flex flex-row">
         <div className="flex items-center justify-center">
           <button onClick={prevImage}>
             <PiArrowLeft
               size={50}
-              className="transition-colors duration-300 ease-in-out hover:border-primary border-background border-2 p-1"
+              className="
+                    w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14
+                    xl:w-[50px] xl:h-[50px]transition-colors duration-300
+                    ease-in-out hover:border-primary border-background border-2
+                    p-1
+                  "
             />
           </button>
         </div>
         <div className="flex items-center justify-center relative">
-          <div style={{ width: "auto", height: "39.5vw", maxHeight: "694px" }}>
-            <img
-              className="absolute z-[-2]"
+          <div className="w-auto h-[39.5vw] max-h-[694px]">
+            <Image
+              className="absolute z-[-1]"
               src="images/empty.png"
-              alt="empty"
-              style={{ width: "auto", height: "40vw", maxHeight: "700px" }}
+              alt="Blank MacBook Pro"
+              style={{
+                height: "40vw",
+                maxHeight: "700px",
+                width: "auto",
+              }}
+              width={500}
+              height={300}
             />
-            <div
-              className={`text-secondary absolute z-[-1] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center transition-opacity duration-[3s] ease-in-out ${
-                isLettersFading ? "opacity-0" : "opacity-100"
-              }`}
-            >
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-semibold tracking-tight mt-4">
-                {titles[currentImageIndex]}
-              </h2>
-              <PiGithubLogoThin size={35} 
-                className="mt-2"
-              />
-            </div>
             <Link href={urls[currentImageIndex]}>
-              <img
-                className={`transition-opacity duration-700 ease-in-out hover:opacity-0 ${
+              <Image
+                className={`transition-opacity duration-700 ease-in-out ${
                   isFading ? "opacity-0" : "opacity-100"
                 }`}
                 src={currentImage}
-                alt="Project Image"
-                style={{ width: "auto", height: "40vw", maxHeight: "700px" }}
+                alt="Project Image on MacBook Pro"
+                style={{
+                  height: "40vw",
+                  maxHeight: "700px",
+                  width: "auto",
+                }}
+                width={500}
+                height={300}
               />
             </Link>
           </div>
@@ -103,14 +109,20 @@ export function Carousel({
           <button onClick={nextImage}>
             <PiArrowRight
               size={50}
-              className="transition-colors duration-300 ease-in-out hover:border-primary border-background border-2 p-1"
+              className="
+                    w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-[50px] xl:h-[50px]
+                    transition-colors duration-300 ease-in-out
+                    hover:border-primary border-background border-2 p-1
+                  "
             />
           </button>
         </div>
       </div>
-      <img
+      <Image
         src="images/walnut_slab.jpg"
         alt="desk"
+        width={500}
+        height={300}
         className="w-[100vw] xs:h-6 sm:h-8 md:h-10 h-4"
         style={{ boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.4)" }}
       />

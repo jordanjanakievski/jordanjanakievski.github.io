@@ -19,12 +19,9 @@ type ProjectType = {
 export function ProjectsSection({ data }: { data: any }) {
   return (
     <div className="mt-10 flex flex-col items-center">
-      <h1 className="font-heading scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-6xl mb-5">
+      <h1 className="font-heading scroll-m-20 text-3xl md:text-5xl font-extrabold tracking-tight lg:text-6xl mb-5">
         Projects
       </h1>
-      <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-        Featured Projects
-      </h3>
       <div className="flex flex-col items-center justify-center">
         <CarouselComponent
           images={data.images}
@@ -52,7 +49,7 @@ export function ProjectsSection({ data }: { data: any }) {
                   </Link>
                 </AccordionContent>
               </AccordionItem>
-            )
+            ),
           )}
         </Accordion>
       </div>

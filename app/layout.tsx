@@ -27,6 +27,15 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preload" href="images/empty.png" as="image" />
+        <link rel="preload" href="images/executive_llama.png" as="image" />
+        <link rel="preload" href="images/framed_profile.png" as="image" />
+        <link rel="preload" href="images/framed_turtle.png" as="image" />
+        <link rel="preload" href="images/framed_watch.png" as="image" />
+        <link rel="preload" href="images/medscrybe.png" as="image" />
+        <link rel="preload" href="images/plankton_eye.png" as="image" />
+        <link rel="preload" href="images/tces.png" as="image" />
+        <link rel="preload" href="images/walnut_slab.jpg" as="image" />
       </head>
       <body className={`${inter.className} ${alliance.className}`}>
         {/* <ThemeProvider attribute="class" defaultTheme="system"> */}
