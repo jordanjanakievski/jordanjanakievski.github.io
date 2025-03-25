@@ -77,7 +77,7 @@ export function AboutSection() {
               </a>
               , I have seen first-hand how improvements in software can change
               the way one works. Because of this, I am constantly trying to hone
-              my craft and find for new opportunities to learn. Currently, I am
+              my craft and find new opportunities to learn. Currently, I am
               looking into contributing to some of my favorite open-source
               projects.
             </p>
