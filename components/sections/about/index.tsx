@@ -14,6 +14,12 @@ import {
   DropdownMenuPortal,
   DropdownMenuSubContent,
 } from "@/components/ui/dropdown-menu";
+import {
+  Tooltip,
+  TooltipProvider,
+  TooltipTrigger,
+  TooltipContent,
+} from "@/components/ui/tooltip";
 import Image from "next/image";
 
 export function AboutSection() {
@@ -22,6 +28,7 @@ export function AboutSection() {
       <h1 className="font-heading scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-6xl mb-10">
         About
       </h1>
+
       <div className="flex flex-col items-center justify-center">
         <div className="flex lg:flex-row items-center justify-around lg:pb-16 pb-8 flex-col">
           <div className="flex flex-col items-center pb-8 lg:pb-0">
@@ -47,19 +54,50 @@ export function AboutSection() {
             <p>
               I am an undergrad studying computer science at the University of
               Toronto. Having grown up in Seattle, it seems that{" "}
-              <DropdownMenu>
-                <DropdownMenuTrigger>
-                  <a className="underline text-blue-600">
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger className="underline text-blue-600 hidden sm:inline">
                     tall observation towers
-                  </a>
+                  </TooltipTrigger>
+                  <TooltipContent className="bg-background border-2">
+                    <div className="flex flex-col justify-center items-center text-black text-sm content-between">
+                      <a
+                        className="p-1"
+                        href="https://en.wikipedia.org/wiki/Space_Needle"
+                      >
+                        Space Needle
+                      </a>
+                      <br />
+                      <a
+                        className="p-1"
+                        href="https://en.wikipedia.org/wiki/CN_Tower"
+                      >
+                        CN Tower
+                      </a>
+                    </div>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="underline text-blue-600 sm:hidden">
+                  tall observation towers
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-56">
-                  <a href="https://en.wikipedia.org/wiki/Space_Needle">
-                    <DropdownMenuItem>Space Needle</DropdownMenuItem>
-                  </a>
-                  <a href="https://en.wikipedia.org/wiki/CN_Tower">
-                    <DropdownMenuItem>CN Tower</DropdownMenuItem>
-                  </a>
+                <DropdownMenuContent className="bg-background border-2">
+                  <div className="flex flex-col justify-center items-center text-black text-sm content-between">
+                    <a
+                      className="p-1"
+                      href="https://en.wikipedia.org/wiki/Space_Needle"
+                    >
+                      Space Needle
+                    </a>
+                    <br />
+                    <a
+                      className="p-1"
+                      href="https://en.wikipedia.org/wiki/CN_Tower"
+                    >
+                      CN Tower
+                    </a>
+                  </div>
                 </DropdownMenuContent>
               </DropdownMenu>{" "}
               are a common architectural theme in my life.
