@@ -4,15 +4,6 @@ import {
   DropdownMenu,
   DropdownMenuTrigger,
   DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubTrigger,
-  DropdownMenuPortal,
-  DropdownMenuSubContent,
 } from "@/components/ui/dropdown-menu";
 import {
   Tooltip,
@@ -124,22 +115,22 @@ export function AboutSection() {
         <div className="flex lg:flex-row items-center justify-around flex-col">
           <div className="lg:w-1/2">
             <p>
-              When away from the keyboard, I enjoy exploring the outdoors.
-              Whether it be kayaking, SCUBA diving, or hiking, I find these
-              activities to be extremely energizing. Sports are another great
-              way to decompress. Both playing and officiating give me
-              opportunities to stay active and connect with others.
+              When away from the keyboard, you can often find me outdoors. From
+              being on the water to hiking in the mountains, it has become very
+              important for me to remain connected with nature. Sports are
+              another way I stay active and unwind. Both playing and officiating
+              give me the chance to connect with others and enjoy some friendly
+              competition.
             </p>
             <br />
             <p>
-              I am also a budding{" "}
               <a
                 className="underline text-blue-600"
                 href="https://en.wikipedia.org/wiki/Chronometry"
               >
-                horologist
-              </a>
-              . While I only have a small{" "}
+                Horology
+              </a>{" "}
+              has become a growing interest of mine. While I only have a small{" "}
               <a
                 className="underline text-blue-600"
                 href="https://community.hodinkee.com/members/JSquared"
@@ -147,9 +138,9 @@ export function AboutSection() {
                 collection
               </a>
               , I love learning about the movements and how each watch tells a
-              unique story about its wearer. You often develop a symbiotic
-              relationship with your timepieces, as they become a part of your
-              daily routine and given life through use.
+              unique story about its wearer. I finding it interesting that you
+              often develop a symbiotic relationship with your timepieces, as
+              they become a part of your routine and given life through use.
             </p>
             <br />
           </div>
