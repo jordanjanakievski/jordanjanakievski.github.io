@@ -1,42 +1,47 @@
 {
-  "titles": [
-    "MedScrybe",
-    "TCES CRM",
-    "Plankton Eye",
-    "Executive Llama"
-  ],
-  "images": [
-    "images/medscrybe.png",
-    "images/tces.png",
-    "images/plankton_eye.png",
-    "images/executive_llama.png"
-  ],
-  "urls": [
-    "https://github.com/jordanjanakievski/MedScrybe",
-    "https://github.com/uoftblueprint/tces",
-    "https://github.com/jordanjanakievski/plankton_eye",
-    "https://github.com/jordanjanakievski/executive_llama"
-  ],
-  "additional_projects": [
-    {
-      "title": "MIPS Assembly Breakout",
-      "url": "https://github.com/jordanjanakievski/mips_breakout",
-      "description": "A simple Brick Breaker game written in MIPS Assembly for a 256x256 pixel display"
-    },
-    {
-      "title": "UToronto Chess",
-      "url": "https://github.com/CSC207-2022F-UofT/course-project-utoronto-chess",
-      "description": "A chess game written in Java for the University of Toronto's software design course"
-    },
-    {
-      "title": "UofT Blueprint Website",
-      "url": "https://github.com/uoftblueprint/uoftblueprint.github.io",
-      "description": "The website for UofT Blueprint, a student-run software development organization creating tech solutions for social good"
-    },
-    {
-      "title": "Portfolio Website",
-      "url": "https://github.com/jordanjanakievski/jordanjanakievski.github.io",
-      "description": "The website you are currently viewing"
-    }
-  ]
+    "titles": [
+        "GitHub Trading Card Generator",
+        "MedScrybe",
+        "TCES CRM",
+        "Plankton Eye"
+    ],
+    "images": [
+        "images/github_card.png",
+        "images/medscrybe.png",
+        "images/tces.png",
+        "images/plankton_eye.png"
+    ],
+    "urls": [
+        "https://github-trading-card.pages.dev",
+        "https://github.com/jordanjanakievski/MedScrybe",
+        "https://github.com/uoftblueprint/tces",
+        "https://github.com/jordanjanakievski/plankton_eye"
+    ],
+    "additional_projects": [
+        {
+            "title": "Executive Llama",
+            "url": "https://github.com/jordanjanakievski/executive_llama",
+            "description": "A terminal chatbot with voice and text input/output capabilities, designed to assist with routine work tasks."
+        },
+        {
+            "title": "MIPS Assembly Breakout",
+            "url": "https://github.com/jordanjanakievski/mips_breakout",
+            "description": "A simple Brick Breaker game written in MIPS Assembly for a 256x256 pixel display."
+        },
+        {
+            "title": "UToronto Chess",
+            "url": "https://github.com/CSC207-2022F-UofT/course-project-utoronto-chess",
+            "description": "A chess game written in Java for the University of Toronto's software design course."
+        },
+        {
+            "title": "UofT Blueprint Website",
+            "url": "https://github.com/uoftblueprint/uoftblueprint.github.io",
+            "description": "The website for UofT Blueprint, a student-run software development organization creating tech solutions for social good."
+        },
+        {
+            "title": "Portfolio Website",
+            "url": "https://github.com/jordanjanakievski/jordanjanakievski.github.io",
+            "description": "The website you are currently viewing. 👋"
+        }
+    ]
 }
