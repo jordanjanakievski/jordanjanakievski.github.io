@@ -1,20 +1,20 @@
 {
     "titles": [
         "GitHub Trading Card Generator",
-        "MedScrybe",
         "TCES CRM",
+        "MedScrybe",
         "Plankton Eye"
     ],
     "images": [
         "images/github_card.png",
-        "images/medscrybe.png",
         "images/tces.png",
+        "images/medscrybe.png",
         "images/plankton_eye.png"
     ],
     "urls": [
         "https://github-trading-card.pages.dev",
-        "https://github.com/jordanjanakievski/MedScrybe",
         "https://github.com/uoftblueprint/tces",
+        "https://github.com/jordanjanakievski/MedScrybe",
         "https://github.com/jordanjanakievski/plankton_eye"
     ],
     "additional_projects": [
