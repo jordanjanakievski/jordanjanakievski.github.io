@@ -1,17 +1,20 @@
 {
     "titles": [
+        "Go Racing Analytics",
         "GitHub Trading Card Generator",
         "TCES CRM",
         "MedScrybe",
         "Plankton Eye"
     ],
     "images": [
+        "images/go_racing.png",
         "images/github_card.png",
         "images/tces.png",
         "images/medscrybe.png",
         "images/plankton_eye.png"
     ],
     "urls": [
+        "https://github.com/jordanjanakievski/go-racing-analytics",
         "https://github-trading-card.pages.dev",
         "https://github.com/uoftblueprint/tces",
         "https://github.com/jordanjanakievski/MedScrybe",
