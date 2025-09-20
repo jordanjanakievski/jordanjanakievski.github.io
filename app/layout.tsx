@@ -45,6 +45,7 @@ export default function RootLayout({
                 />
                 <link rel="preload" href="images/framed_watch.png" as="image" />
                 <link rel="preload" href="images/medscrybe.png" as="image" />
+                <link rel="preload" href="images/github_card.png" as="image" />
                 <link rel="preload" href="images/go_racing.png" as="image" />
                 <link rel="preload" href="images/plankton_eye.png" as="image" />
                 <link rel="preload" href="images/tces.png" as="image" />
