@@ -30,17 +30,7 @@ export default function RootLayout({
                 <link rel="preload" href="images/empty.png" as="image" />
                 <link
                     rel="preload"
-                    href="images/executive_llama.png"
-                    as="image"
-                />
-                <link
-                    rel="preload"
                     href="images/framed_profile.png"
-                    as="image"
-                />
-                <link
-                    rel="preload"
-                    href="images/framed_turtle.png"
                     as="image"
                 />
                 <link rel="preload" href="images/framed_watch.png" as="image" />
