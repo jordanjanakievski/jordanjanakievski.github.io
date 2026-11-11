@@ -111,7 +111,8 @@ export function AboutSection() {
                             software can change the way one works. Because of
                             this, I am constantly trying to hone my craft and
                             find new opportunities to learn. Currently, I am
-                            learning how to apply agent loops to domains I am new to.
+                            learning about applying agent loops to domains in which I am not an
+                            expert.
                         </p>
                     </div>
                 </div>
