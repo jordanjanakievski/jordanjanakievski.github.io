@@ -27,19 +27,19 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <link rel="icon" href="/favicon.ico" />
-                <link rel="preload" href="images/empty.png" as="image" />
+                <link rel="preload" href="images/empty.webp" as="image" />
                 <link
                     rel="preload"
-                    href="images/framed_profile.png"
+                    href="images/framed_profile.webp"
                     as="image"
                 />
-                <link rel="preload" href="images/framed_watch.png" as="image" />
-                <link rel="preload" href="images/medscrybe.png" as="image" />
-                <link rel="preload" href="images/github_card.png" as="image" />
-                <link rel="preload" href="images/go_racing.png" as="image" />
-                <link rel="preload" href="images/plankton_eye.png" as="image" />
-                <link rel="preload" href="images/tces.png" as="image" />
-                <link rel="preload" href="images/walnut_slab.jpg" as="image" />
+                <link rel="preload" href="images/framed_watch.webp" as="image" />
+                <link rel="preload" href="images/medscrybe.webp" as="image" />
+                <link rel="preload" href="images/github_card.webp" as="image" />
+                <link rel="preload" href="images/go_racing.webp" as="image" />
+                <link rel="preload" href="images/plankton_eye.webp" as="image" />
+                <link rel="preload" href="images/tces.webp" as="image" />
+                <link rel="preload" href="images/walnut_slab.webp" as="image" />
             </head>
             <body className={`${inter.className} ${alliance.className}`}>
                 {/* <ThemeProvider attribute="class" defaultTheme="system"> */}
