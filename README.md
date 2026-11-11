@@ -21,7 +21,7 @@ Once the node modules have been installed, you can run the project.
 
 ```bash
 # to run the development version of the project
-npm run dev
+bun dev
 
 # to build the production version of the project
 bun run build
