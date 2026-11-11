@@ -45,9 +45,9 @@ export function AboutSection() {
                         <p>Hi, my name is Jordan!</p>
                         <br />
                         <p>
-                            I am a founding engineer at a seed-stage startup.
-                            Having grown up in Seattle and gone to school in
-                            Toronto, it seems that{" "}
+                            I am a founding engineer at a seed-stage startup
+                            transforming obstetrics. Having grown up in Seattle
+                            and gone to school in Toronto, it seems that{" "}
                             <TooltipProvider>
                                 <Tooltip>
                                     <TooltipTrigger className="underline text-blue-600 hidden sm:inline">
@@ -111,7 +111,7 @@ export function AboutSection() {
                             software can change the way one works. Because of
                             this, I am constantly trying to hone my craft and
                             find new opportunities to learn. Currently, I am
-                            learning about agent loops and marketing.
+                            learning how to apply agent loops to domains I am new to.
                         </p>
                     </div>
                 </div>
