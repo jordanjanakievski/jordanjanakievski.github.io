@@ -45,9 +45,9 @@ export function AboutSection() {
                         <p>Hi, my name is Jordan!</p>
                         <br />
                         <p>
-                            I am an undergrad studying computer science at the
-                            University of Toronto. Having grown up in Seattle,
-                            it seems that{" "}
+                            I am a founding engineer at a seed-stage startup
+                            transforming obstetrics. Having grown up in Seattle
+                            and gone to school in Toronto, it seems that{" "}
                             <TooltipProvider>
                                 <Tooltip>
                                     <TooltipTrigger className="underline text-blue-600 hidden sm:inline">
@@ -100,7 +100,7 @@ export function AboutSection() {
                         <p>
                             I like to solve hard problems that make a real
                             difference. Whether it be improving the experience
-                            for a user or developing full systems with{" "}
+                            for a user or volunteering my time with{" "}
                             <a
                                 className="underline text-blue-600"
                                 href="https://uoftblueprint.org"
@@ -111,8 +111,8 @@ export function AboutSection() {
                             software can change the way one works. Because of
                             this, I am constantly trying to hone my craft and
                             find new opportunities to learn. Currently, I am
-                            looking into contributing to some of my favorite
-                            open-source projects.
+                            learning about applying agent loops to domains in which I am not an
+                            expert.
                         </p>
                     </div>
                 </div>
