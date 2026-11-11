@@ -11,8 +11,8 @@ This is a Next.js project.
 # clone the project
 git clone https://github.com/jordanjanakievski/jordanjanakievski.github.io.git
 
-# run npm install in the root directory
-npm install
+# run bun install in the root directory
+bun install
 ```
 
 ## Developing
@@ -21,10 +21,10 @@ Once the node modules have been installed, you can run the project.
 
 ```bash
 # to run the development version of the project
-npm run dev
+bun dev
 
 # to build the production version of the project
-npm run build
+bun run build
 ```
 
 ## Deployment

@@ -2,7 +2,6 @@
 
 import React from "react";
 
-import { ContactForm } from "@/components/custom/contact-form";
 import { Button } from "@/components/ui/button";
 import { PiPaperPlaneTiltThin } from "react-icons/pi";
 import Link from "next/link";
@@ -19,7 +18,6 @@ export function ContactSection() {
           Send
         </Button>
       </Link>
-      {/* <ContactForm /> */}
       <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mt-8">
         Or find me below...
       </h4>
