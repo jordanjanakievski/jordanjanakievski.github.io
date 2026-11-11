@@ -24,14 +24,14 @@ export function AboutSection() {
                 <div className="flex lg:flex-row items-center justify-around lg:pb-16 pb-8 flex-col">
                     <div className="flex flex-col items-center pb-8 lg:pb-0">
                         <Image
-                            src="/images/framed_profile.png"
+                            src="/images/framed_profile.webp"
                             alt="framed photo of Jordan"
                             width={200}
                             height={200}
                             className="w-[150px] lg:w-[200px]"
                         />
                         <Image
-                            src="images/walnut_slab.jpg"
+                            src="images/walnut_slab.webp"
                             width={200}
                             height={16}
                             alt="desk"
@@ -154,14 +154,14 @@ export function AboutSection() {
                     <div className="flex flex-col items-center lg:ml-8">
                         <div className="flex items-end justify-center space-x-4">
                             <Image
-                                src="/images/framed_watch.png"
+                                src="/images/framed_watch.webp"
                                 alt="framed photo of wrist watch"
                                 width={150}
                                 height={150}
                                 className="w-[100px] lg:w-[150px]"
                             />
                             <Image
-                                src="/images/framed_scuba.png"
+                                src="/images/framed_scuba.webp"
                                 alt="framed photo of Jordan scuba diving"
                                 width={200}
                                 height={200}
@@ -169,7 +169,7 @@ export function AboutSection() {
                             />
                         </div>
                         <Image
-                            src="images/walnut_slab.jpg"
+                            src="images/walnut_slab.webp"
                             width={350}
                             height={16}
                             alt="desk"

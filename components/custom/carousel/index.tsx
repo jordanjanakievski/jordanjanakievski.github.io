@@ -100,7 +100,7 @@ export function Carousel({
                     <div className="w-auto h-[39.5vw] max-h-[694px]">
                         <Image
                             className="absolute z-[-1]"
-                            src="images/empty.png"
+                            src="images/empty.webp"
                             alt="Blank MacBook Pro"
                             style={{
                                 height: "40vw",
@@ -142,7 +142,7 @@ export function Carousel({
                 </div>
             </div>
             <Image
-                src="images/walnut_slab.jpg"
+                src="images/walnut_slab.webp"
                 alt="desk"
                 width={500}
                 height={300}

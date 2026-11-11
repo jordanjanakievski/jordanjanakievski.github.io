@@ -7,11 +7,11 @@
         "Plankton Eye"
     ],
     "images": [
-        "images/go_racing.png",
-        "images/github_card.png",
-        "images/tces.png",
-        "images/medscrybe.png",
-        "images/plankton_eye.png"
+        "images/go_racing.webp",
+        "images/github_card.webp",
+        "images/tces.webp",
+        "images/medscrybe.webp",
+        "images/plankton_eye.webp"
     ],
     "urls": [
         "https://github.com/jordanjanakievski/go-racing-analytics",
